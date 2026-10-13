@@ -1,4 +1,4 @@
-# RD NEWS — entrega para desenvolvimento
+# Alto Madeira — entrega para desenvolvimento
 
 Portal regional de notícias de Porto Velho e Rondônia.
 
@@ -45,7 +45,7 @@ A home, as editorias, a busca e a página de matéria são montadas a partir des
 
 O projeto contém uma faixa superior e um popup de autoria da Flash Sites. O popup é exibido a cada 15 segundos por decisão do projeto. O texto e o intervalo podem ser localizados buscando por `rightsModal`, `rightsOpen` e `openRightsNotice`.
 
-O layout, a identidade visual, a composição, o código e os elementos autorais devem ser tratados como material de uso reservado da Flash Sites para o RD NEWS. Consulte `DIREITOS_E_AUTORIA.md` antes de reutilizar, adaptar ou publicar qualquer parte.
+O layout, a identidade visual, a composição, o código e os elementos autorais devem ser tratados como material de uso reservado da Flash Sites para o Alto Madeira. Consulte `DIREITOS_E_AUTORIA.md` antes de reutilizar, adaptar ou publicar qualquer parte.
 
 ## Conteúdo e imagens
 
