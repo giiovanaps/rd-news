@@ -1,0 +1,1571 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RD NEWS — Notícias de Porto Velho e Rondônia</title>
+  <meta name="description" content="RD NEWS: notícias de Porto Velho e de Rondônia com apuração, contexto e serviço. Política, cidade, economia, saúde, educação e cultura." />
+  <meta name="keywords" content="notícias Porto Velho, Rondônia, notícias de Rondônia, política Porto Velho, cidade, economia, saúde, cultura" />
+  <meta property="og:site_name" content="RD NEWS" />
+  <meta property="og:title" content="RD NEWS — Notícias de Porto Velho e Rondônia" />
+  <meta property="og:description" content="A informação da capital de Rondônia, com contexto, serviço e olhar regional." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:image" content="img/orla.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#0c1d3b" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%231d4fb5'/%3E%3Crect y='54' width='64' height='10' fill='%23e2a51b'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-weight='700' font-size='32' fill='%23fff' text-anchor='middle'%3ERD%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800;900&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;0,6..72,800;1,6..72,400;1,6..72,500;1,6..72,600&display=swap" rel="stylesheet" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"NewsMediaOrganization","name":"RD NEWS","description":"Portal de notícias de Porto Velho e Rondônia","areaServed":{"@type":"City","name":"Porto Velho"},"address":{"@type":"PostalAddress","addressLocality":"Porto Velho","addressRegion":"RO","addressCountry":"BR"}}
+  </script>
+  <style>
+    :root {
+      --ink: #121417;
+      --ink-2: #2a2f36;
+      --muted: #626973;
+      --faint: #8a9099;
+      --line: #e2e3e6;
+      --line-2: #cfd2d7;
+      --paper: #ffffff;
+      --paper-2: #f6f4ef;
+      --paper-3: #f2f4f7;
+      --brand: #1d4fb5;
+      --brand-dark: #153c8c;
+      --navy: #0c1d3b;
+      --navy-2: #13284d;
+      --gold: #e2a51b;
+      --gold-soft: #fbf3dc;
+      --red: #c4161c;
+      --serif: 'Newsreader', Georgia, 'Times New Roman', serif;
+      --sans: 'Libre Franklin', 'Helvetica Neue', Arial, sans-serif;
+      --wrap: 1200px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); font-size: 15px; line-height: 1.5; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    button, input, select { font: inherit; color: inherit; }
+    button { cursor: pointer; background: none; border: 0; padding: 0; }
+    :focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
+    ::selection { background: #d8e3fa; }
+    .wrap { width: min(var(--wrap), calc(100% - 48px)); margin: 0 auto; }
+    .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+    .skip { position: absolute; left: 12px; top: -60px; background: var(--ink); color: #fff; padding: 10px 14px; z-index: 100; font-weight: 600; font-size: 13px; }
+    .skip:focus { top: 12px; }
+
+    /* ---------- Faixa de autoria ---------- */
+    .rights-strip { background: #0a1426; color: rgba(255,255,255,.62); font-size: 11px; }
+    .rights-strip .wrap { min-height: 30px; display: flex; align-items: center; justify-content: center; gap: 10px; text-align: center; }
+    .rights-strip strong { color: var(--gold); font-weight: 700; letter-spacing: .1em; text-transform: uppercase; font-size: 10px; white-space: nowrap; }
+    .rights-strip button { color: #fff; text-decoration: underline; text-underline-offset: 2px; font-size: 11px; white-space: nowrap; }
+
+    /* ---------- Barra utilitária ---------- */
+    .utility { border-bottom: 1px solid var(--line); font-size: 12px; color: var(--muted); }
+    .utility .wrap { min-height: 38px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .utility-left, .utility-right { display: flex; align-items: center; gap: 18px; }
+    .utility-date { color: var(--ink-2); font-weight: 500; }
+    .utility-weather { display: inline-flex; align-items: center; gap: 6px; }
+    .utility-weather svg { width: 16px; height: 16px; color: var(--gold); }
+    .utility-weather b { color: var(--ink); font-weight: 600; }
+    .utility-sep { width: 1px; height: 14px; background: var(--line-2); }
+    .social { display: flex; align-items: center; gap: 4px; }
+    .social a { width: 28px; height: 28px; display: grid; place-items: center; color: var(--muted); border-radius: 50%; transition: color .15s, background .15s; }
+    .social a:hover { color: var(--ink); background: var(--paper-3); }
+    .social svg { width: 15px; height: 15px; }
+
+    /* ---------- Cabeçalho ---------- */
+    .masthead .wrap { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 24px; padding: 22px 0 18px; }
+    .mh-left { display: flex; align-items: center; gap: 6px; }
+    .mh-right { display: flex; align-items: center; justify-content: flex-end; gap: 10px; }
+    .icon-btn { height: 40px; display: inline-flex; align-items: center; gap: 9px; padding: 0 12px 0 10px; font-size: 13px; font-weight: 600; color: var(--ink); border-radius: 2px; transition: background .15s; }
+    .icon-btn:hover { background: var(--paper-3); }
+    .icon-btn svg { width: 20px; height: 20px; }
+    .btn { height: 38px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 0 16px; font-size: 13px; font-weight: 700; border-radius: 2px; transition: background .15s, color .15s, border-color .15s; white-space: nowrap; }
+    .btn-outline { border: 1px solid var(--line-2); color: var(--ink); }
+    .btn-outline:hover { border-color: var(--ink); }
+    .btn-solid { background: var(--brand); color: #fff; }
+    .btn-solid:hover { background: var(--brand-dark); }
+    .btn-gold { background: var(--gold); color: var(--navy); }
+    .btn-gold:hover { background: #f0b631; }
+    .btn svg { width: 16px; height: 16px; }
+
+    .logo { display: grid; justify-items: center; gap: 7px; }
+    .logo-word { font-family: var(--serif); font-weight: 800; font-size: 56px; line-height: .82; letter-spacing: -.02em; color: var(--ink); font-variation-settings: 'opsz' 72; display: flex; align-items: baseline; }
+    .logo-word b { color: var(--brand); font-weight: 800; margin-right: .2em; }
+    .logo-word i { width: .17em; height: .17em; background: var(--gold); display: inline-block; margin-left: .06em; font-style: normal; }
+    .logo-sub { font-size: 10.5px; font-weight: 700; letter-spacing: .32em; text-transform: uppercase; color: var(--muted); padding-left: .32em; }
+
+    /* ---------- Navegação ---------- */
+    .nav { border-top: 1px solid var(--ink); border-bottom: 1px solid var(--line); background: var(--paper); }
+    .nav-list { display: flex; justify-content: center; align-items: center; gap: 2px; min-height: 46px; overflow-x: auto; scrollbar-width: none; }
+    .nav-list::-webkit-scrollbar { display: none; }
+    .nav-link { position: relative; white-space: nowrap; font-size: 13.5px; font-weight: 600; color: var(--ink-2); padding: 13px 14px; transition: color .15s; }
+    .nav-link::after { content: ''; position: absolute; left: 14px; right: 14px; bottom: -1px; height: 3px; background: var(--brand); transform: scaleX(0); transition: transform .2s; }
+    .nav-link:hover { color: var(--brand); }
+    .nav-link.active { color: var(--ink); }
+    .nav-link.active::after, .nav-link:hover::after { transform: scaleX(1); }
+    .nav-link.live { color: var(--red); display: inline-flex; align-items: center; gap: 7px; }
+    .nav-link.live::after { background: var(--red); }
+
+    /* ---------- Cabeçalho compacto ---------- */
+    .sticky-bar { position: fixed; top: 0; left: 0; right: 0; z-index: 30; background: rgba(255,255,255,.97); backdrop-filter: saturate(1.4) blur(6px); border-bottom: 1px solid var(--line); transform: translateY(-100%); transition: transform .25s ease; }
+    .sticky-bar.show { transform: none; box-shadow: 0 6px 18px rgba(12,29,59,.06); }
+    .sticky-bar .wrap { display: flex; align-items: center; gap: 18px; height: 54px; }
+    .sticky-logo { font-family: var(--serif); font-weight: 800; font-size: 25px; letter-spacing: -.02em; line-height: 1; display: flex; align-items: baseline; }
+    .sticky-logo b { color: var(--brand); margin-right: .2em; }
+    .sticky-logo i { width: 5px; height: 5px; background: var(--gold); display: inline-block; margin-left: 2px; }
+    .sticky-bar .nav-list { justify-content: flex-start; flex: 1; min-height: 54px; }
+    .sticky-bar .nav-link { font-size: 13px; padding: 17px 10px; }
+    .sticky-bar .nav-link::after { left: 10px; right: 10px; }
+    .progress { position: absolute; left: 0; bottom: -1px; height: 3px; background: var(--brand); width: 0; }
+
+    /* ---------- Agora ---------- */
+    .ticker { border-bottom: 1px solid var(--line); background: var(--paper); }
+    .ticker .wrap { display: flex; align-items: center; gap: 14px; min-height: 46px; }
+    .ticker-label { display: inline-flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--red); white-space: nowrap; }
+    .pulse { width: 8px; height: 8px; border-radius: 50%; background: var(--red); position: relative; }
+    .pulse::after { content: ''; position: absolute; inset: -4px; border-radius: 50%; border: 2px solid var(--red); opacity: 0; animation: pulse 1.8s ease-out infinite; }
+    @keyframes pulse { 0% { transform: scale(.5); opacity: .7; } 100% { transform: scale(1.4); opacity: 0; } }
+    .ticker-track { flex: 1; min-width: 0; position: relative; height: 22px; overflow: hidden; }
+    .ticker-item { position: absolute; inset: 0; display: flex; align-items: center; gap: 10px; font-size: 14px; white-space: nowrap; opacity: 0; transform: translateY(10px); transition: opacity .4s, transform .4s; pointer-events: none; }
+    .ticker-item.on { opacity: 1; transform: none; pointer-events: auto; }
+    .ticker-item time { font-weight: 700; color: var(--ink); font-variant-numeric: tabular-nums; font-size: 13px; }
+    .ticker-item span { overflow: hidden; text-overflow: ellipsis; font-weight: 500; color: var(--ink-2); }
+    .ticker-item:hover span { color: var(--brand); }
+    .ticker-ctrl { display: flex; gap: 2px; }
+    .ticker-ctrl button { width: 28px; height: 28px; display: grid; place-items: center; color: var(--muted); border: 1px solid var(--line); }
+    .ticker-ctrl button:hover { color: var(--ink); border-color: var(--line-2); }
+    .ticker-ctrl svg { width: 14px; height: 14px; }
+
+    /* ---------- Tipografia de notícia ---------- */
+    .kicker { display: inline-block; font-size: 11.5px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: var(--brand); margin-bottom: 7px; }
+    .kicker.opinion { color: #8a5a00; }
+    .hl { font-family: var(--serif); font-weight: 600; letter-spacing: -.012em; line-height: 1.14; margin: 0; color: var(--ink); font-variation-settings: 'opsz' 36; text-wrap: balance; }
+    a.story:hover .hl, a .hl:hover { color: var(--brand-dark); }
+    a.story:hover .hl { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    .deck { color: var(--muted); margin: 8px 0 0; font-size: 15px; line-height: 1.5; }
+    .meta { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; margin-top: 9px; font-size: 12px; color: var(--faint); }
+    .meta time { font-variant-numeric: tabular-nums; }
+    .meta .dot { width: 3px; height: 3px; border-radius: 50%; background: currentColor; opacity: .7; }
+    .ph { position: relative; overflow: hidden; background: var(--paper-3); }
+    .ph img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease, opacity .4s; }
+    a.story:hover .ph img { transform: scale(1.025); }
+    .ph figcaption, .ph .credit { position: absolute; right: 0; bottom: 0; font-size: 10px; color: rgba(255,255,255,.88); background: rgba(0,0,0,.42); padding: 3px 7px; letter-spacing: .01em; }
+    .story { display: block; }
+
+    /* ---------- Cabeçalhos de seção ---------- */
+    .sec-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; border-top: 3px solid var(--ink); padding-top: 11px; margin-bottom: 20px; }
+    .sec-title { margin: 0; font-size: 15px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; display: inline-flex; align-items: center; gap: 8px; }
+    .sec-title a:hover { color: var(--brand); }
+    .sec-title svg { width: 15px; height: 15px; }
+    .sec-links { display: flex; gap: 18px; font-size: 13px; color: var(--muted); }
+    .sec-links a:hover { color: var(--brand); }
+    .sec-more { font-size: 13px; font-weight: 600; color: var(--brand); display: inline-flex; align-items: center; gap: 4px; white-space: nowrap; }
+    .sec-more:hover { text-decoration: underline; text-underline-offset: 3px; }
+    section { margin-top: 44px; }
+
+    /* ---------- Manchete ---------- */
+    main { padding-bottom: 8px; }
+    .front { display: grid; grid-template-columns: 280px minmax(0, 1fr) 280px; gap: 0; margin-top: 28px; }
+    .front > * { padding: 0 26px; }
+    .front > *:first-child { padding-left: 0; }
+    .front > *:last-child { padding-right: 0; }
+    .front > * + * { border-left: 1px solid var(--line); }
+    .front-left .story + .story { border-top: 1px solid var(--line); padding-top: 18px; margin-top: 18px; }
+    .front-left .ph { aspect-ratio: 3 / 2; margin-bottom: 12px; }
+    .front-left .hl { font-size: 21px; }
+    .front-left .deck { font-size: 14px; }
+    .lead .ph { aspect-ratio: 16 / 10; margin-bottom: 18px; }
+    .lead .hl { font-size: 42px; line-height: 1.06; font-weight: 700; letter-spacing: -.022em; font-variation-settings: 'opsz' 60; }
+    .lead .deck { font-size: 17.5px; margin-top: 12px; color: var(--ink-2); font-family: var(--serif); line-height: 1.45; }
+    .lead-related { list-style: none; padding: 0; margin: 16px 0 0; border-top: 1px solid var(--line); }
+    .lead-related li { border-bottom: 1px solid var(--line); }
+    .lead-related a { display: flex; gap: 10px; padding: 11px 0; font-family: var(--serif); font-weight: 600; font-size: 16.5px; line-height: 1.3; }
+    .lead-related a::before { content: ''; flex: 0 0 7px; height: 7px; margin-top: 8px; background: var(--brand); }
+    .lead-related a:hover { color: var(--brand-dark); }
+    .lead-related small { display: block; font-family: var(--sans); font-weight: 500; font-size: 11.5px; color: var(--faint); margin-top: 3px; }
+
+    .rank-title { font-size: 12.5px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; margin: 0 0 4px; padding-bottom: 10px; border-bottom: 3px solid var(--ink); display: flex; justify-content: space-between; align-items: baseline; }
+    .rank-title small { font-size: 11px; color: var(--faint); letter-spacing: .02em; text-transform: none; font-weight: 500; }
+    .rank { list-style: none; margin: 0; padding: 0; }
+    .rank li { border-bottom: 1px solid var(--line); }
+    .rank a { display: block; padding: 14px 0; }
+    .rank .hl { font-size: 16.5px; line-height: 1.25; }
+    .rank a:hover .hl { color: var(--brand-dark); }
+    .rank .kicker { font-size: 10.5px; margin-bottom: 4px; }
+
+    .service-mini { margin-top: 22px; background: var(--gold-soft); padding: 16px 16px 6px; border-top: 3px solid var(--gold); }
+    .service-mini h3 { margin: 0 0 8px; font-size: 12px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: #6f4e00; }
+    .service-mini a { display: block; padding: 9px 0; border-top: 1px solid rgba(111,78,0,.15); font-size: 13.5px; font-weight: 600; line-height: 1.35; }
+    .service-mini a:hover { color: var(--brand-dark); }
+    .service-mini a small { display: block; font-weight: 500; color: #7c6a3d; font-size: 11.5px; margin-top: 2px; }
+
+    /* ---------- Publicidade ---------- */
+    .ad-slot { display: grid; justify-items: center; gap: 6px; }
+    .ad-label { font-size: 9.5px; letter-spacing: .18em; text-transform: uppercase; color: var(--faint); font-weight: 600; }
+    .ad-wide { margin-top: 40px; padding: 18px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--paper-3); }
+    .ad-board { width: min(970px, 100%); min-height: 90px; display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 0 34px; background: var(--navy); color: #fff; position: relative; overflow: hidden; }
+    .ad-board::before { content: ''; position: absolute; inset: 0; background: url('img/orla.jpg') center 60% / cover; opacity: .2; }
+    .ad-board::after { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 6px; background: var(--gold); }
+    .ad-board > * { position: relative; }
+    .ad-board strong { font-family: var(--serif); font-size: 25px; font-weight: 600; letter-spacing: -.01em; line-height: 1.15; }
+    .ad-board strong em { color: var(--gold); font-style: italic; }
+    .ad-board div span { font-size: 12.5px; color: rgba(255,255,255,.72); display: block; margin-top: 4px; }
+    .ad-box { width: 300px; max-width: 100%; height: 250px; background: var(--navy); color: #fff; padding: 26px 24px; display: flex; flex-direction: column; justify-content: space-between; position: relative; overflow: hidden; }
+    .ad-box::before { content: ''; position: absolute; inset: 0; background: url('img/caixas.jpg') center / cover; opacity: .28; }
+    .ad-box::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,29,59,.2), rgba(12,29,59,.92) 70%); }
+    .ad-box > * { position: relative; z-index: 1; }
+    .ad-box .ad-brand { font-family: var(--serif); font-weight: 800; font-size: 17px; display: flex; align-items: baseline; }
+    .ad-box .ad-brand b { color: #7ea5f5; margin-right: .2em; }
+    .ad-box .ad-brand i { width: 4px; height: 4px; background: var(--gold); display: inline-block; margin-left: 2px; }
+    .ad-box strong { font-family: var(--serif); font-weight: 600; font-size: 26px; line-height: 1.1; letter-spacing: -.01em; }
+    .ad-box p { margin: 6px 0 14px; font-size: 12.5px; color: rgba(255,255,255,.75); }
+    .ad-box .btn { align-self: flex-start; height: 34px; font-size: 12px; }
+
+    /* ---------- Grade de cards ---------- */
+    .grid-4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px; }
+    .grid-4 .ph { aspect-ratio: 3 / 2; margin-bottom: 12px; }
+    .grid-4 .hl { font-size: 19px; line-height: 1.2; }
+    .grid-4 .deck { font-size: 13.5px; }
+
+    /* ---------- Últimas + coluna lateral ---------- */
+    .split { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 48px; align-items: start; }
+    .chips { display: flex; gap: 6px; flex-wrap: wrap; margin: -6px 0 6px; }
+    .chip { height: 32px; padding: 0 13px; border: 1px solid var(--line); font-size: 12.5px; font-weight: 600; color: var(--ink-2); border-radius: 999px; transition: all .15s; }
+    .chip:hover { border-color: var(--ink); }
+    .chip.on { background: var(--ink); color: #fff; border-color: var(--ink); }
+    .feed-item { display: grid; grid-template-columns: 62px minmax(0, 1fr) 200px; gap: 22px; padding: 22px 0; border-bottom: 1px solid var(--line); }
+    .feed-time { font-size: 12px; font-weight: 700; color: var(--ink); font-variant-numeric: tabular-nums; padding-top: 2px; line-height: 1.35; }
+    .feed-time small { display: block; color: var(--faint); font-weight: 500; }
+    .feed-item .hl { font-size: 23px; line-height: 1.17; }
+    .feed-item .deck { font-size: 14.5px; }
+    .feed-item .ph { aspect-ratio: 3 / 2; }
+    .feed-empty { padding: 40px 0; color: var(--muted); text-align: center; border-bottom: 1px solid var(--line); }
+    .more-btn { margin-top: 22px; width: 100%; height: 46px; border: 1px solid var(--ink); font-weight: 700; font-size: 13.5px; letter-spacing: .02em; transition: background .15s, color .15s; }
+    .more-btn:hover { background: var(--ink); color: #fff; }
+    .more-btn[hidden] { display: none; }
+
+    .rail { display: grid; gap: 34px; }
+    .split > .rail { position: sticky; top: 74px; }
+    .split > *, .art-grid > *, .front > *, .cols-3 > *, .grid-4 > * { min-width: 0; }
+    .rail-box > h3 { margin: 0 0 12px; font-size: 12.5px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; padding-bottom: 10px; border-bottom: 3px solid var(--ink); }
+    .weather { border: 1px solid var(--line); padding: 18px 18px 14px; }
+    .weather-top { display: flex; align-items: center; justify-content: space-between; }
+    .weather-city { font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+    .weather-city small { display: block; font-weight: 500; letter-spacing: 0; text-transform: none; color: var(--faint); font-size: 12px; margin-top: 2px; }
+    .weather-now { display: flex; align-items: center; gap: 10px; margin: 12px 0 14px; }
+    .weather-now strong { font-family: var(--serif); font-size: 52px; font-weight: 500; line-height: 1; letter-spacing: -.03em; }
+    .weather-now svg { width: 46px; height: 46px; color: var(--gold); }
+    .weather-now p { margin: 0; font-size: 13px; color: var(--muted); line-height: 1.4; }
+    .weather-now p b { color: var(--ink); font-weight: 600; display: block; }
+    .weather-days { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--line); padding-top: 12px; text-align: center; font-size: 12px; }
+    .weather-days div { display: grid; justify-items: center; gap: 4px; color: var(--muted); }
+    .weather-days b { color: var(--ink); font-weight: 600; }
+    .weather-days svg { width: 20px; height: 20px; color: var(--gold); }
+    .phones { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); border: 1px solid var(--line); }
+    .phones a { background: #fff; padding: 12px 13px; display: grid; gap: 1px; transition: background .15s; }
+    .phones a:hover { background: var(--paper-3); }
+    .phones b { font-family: var(--serif); font-size: 22px; font-weight: 700; line-height: 1.05; color: var(--ink); font-variant-numeric: tabular-nums; }
+    .phones span { font-size: 11.5px; color: var(--muted); }
+    .phones a.wide { grid-column: 1 / -1; }
+    .phones a.wide b { font-size: 18px; }
+
+    /* ---------- Opinião ---------- */
+    .opinion-band { background: var(--paper-2); margin-top: 56px; padding: 40px 0 46px; }
+    .opinion-band section { margin-top: 0; }
+    .opinion-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; }
+    .opinion-grid > a { padding: 4px 30px 4px; display: grid; grid-template-columns: 58px 1fr; gap: 16px; align-items: start; }
+    .opinion-grid > a:first-child { padding-left: 0; }
+    .opinion-grid > a:last-child { padding-right: 0; }
+    .opinion-grid > a + a { border-left: 1px solid #ddd6c8; }
+    .avatar { width: 58px; height: 58px; border-radius: 50%; display: grid; place-items: center; font-family: var(--serif); font-weight: 600; font-size: 21px; color: #fff; letter-spacing: .02em; }
+    .op-author { font-size: 13px; font-weight: 700; }
+    .op-author small { display: block; font-weight: 500; color: var(--muted); font-size: 12px; }
+    .opinion-grid .hl { font-size: 22px; font-style: italic; font-weight: 500; line-height: 1.2; margin-top: 8px; }
+    .opinion-grid a:hover .hl { color: var(--brand-dark); }
+
+    /* ---------- Em imagens ---------- */
+    .gallery-band { background: var(--navy); color: #fff; padding: 42px 0 48px; margin-top: 0; }
+    .gallery-band section { margin-top: 0; }
+    .gallery-band .sec-head { border-top-color: var(--gold); }
+    .gallery-band .sec-title { color: #fff; }
+    .gallery-band .sec-links { color: rgba(255,255,255,.6); }
+    .gallery { display: grid; grid-template-columns: 1.6fr 1fr 1fr; grid-template-rows: 220px 220px; gap: 10px; }
+    .gallery button { position: relative; overflow: hidden; text-align: left; background: #0a1730; }
+    .gallery button:first-child { grid-row: 1 / 3; }
+    .gallery button:nth-child(n+6) { display: none; }
+    .gallery img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease, opacity .3s; opacity: .92; }
+    .gallery button:hover img { transform: scale(1.04); opacity: 1; }
+    .gallery button::after { content: ''; position: absolute; inset: 40% 0 0; background: linear-gradient(transparent, rgba(5,12,26,.85)); }
+    .gallery .cap { position: absolute; left: 16px; right: 16px; bottom: 13px; z-index: 1; font-family: var(--serif); font-size: 17px; font-weight: 500; line-height: 1.25; }
+    .gallery button:first-child .cap { font-size: 24px; left: 22px; bottom: 20px; }
+    .gallery small { display: block; font-family: var(--sans); font-size: 11px; color: rgba(255,255,255,.65); margin-top: 3px; }
+    .gallery-count { position: absolute; top: 14px; left: 14px; z-index: 1; display: inline-flex; align-items: center; gap: 6px; background: rgba(0,0,0,.5); padding: 5px 9px; font-size: 11px; font-weight: 600; }
+    .gallery-count svg { width: 13px; height: 13px; }
+
+    /* ---------- Editorias em colunas ---------- */
+    .cols-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px; }
+    .col-block .ph { aspect-ratio: 16 / 10; margin-bottom: 12px; }
+    .col-block .story:first-child .hl { font-size: 22px; }
+    .col-block .mini { display: block; padding: 13px 0; border-top: 1px solid var(--line); }
+    .col-block .story + .mini { margin-top: 16px; }
+    .col-block .mini .hl { font-size: 16.5px; line-height: 1.25; }
+    .col-block .mini:hover .hl { color: var(--brand-dark); }
+
+    /* ---------- WhatsApp / Newsletter ---------- */
+    .subscribe { margin-top: 56px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .subscribe .wrap { display: grid; grid-template-columns: 1fr 1fr; }
+    .sub-card { padding: 36px 40px 38px 0; display: grid; grid-template-columns: 54px 1fr; gap: 20px; align-items: start; }
+    .sub-card + .sub-card { border-left: 1px solid var(--line); padding: 36px 0 38px 40px; }
+    .sub-icon { width: 54px; height: 54px; display: grid; place-items: center; border-radius: 50%; }
+    .sub-icon svg { width: 26px; height: 26px; }
+    .sub-card h2 { font-family: var(--serif); font-weight: 600; font-size: 27px; line-height: 1.15; letter-spacing: -.015em; margin: 0 0 6px; }
+    .sub-card p { margin: 0 0 16px; color: var(--muted); font-size: 14.5px; }
+    .news-form { display: flex; gap: 8px; max-width: 460px; }
+    .news-form input { flex: 1; min-width: 0; height: 44px; border: 1px solid var(--line-2); padding: 0 14px; font-size: 14px; border-radius: 2px; outline: 0; transition: border-color .15s; }
+    .news-form input:focus { border-color: var(--brand); }
+    .news-form .btn { height: 44px; }
+    .form-note { font-size: 12px; color: var(--faint); margin: 8px 0 0; min-height: 18px; }
+    .form-note.ok { color: #137a3f; font-weight: 600; }
+    .btn-wa { background: #128c4a; color: #fff; height: 44px; padding: 0 18px; }
+    .btn-wa:hover { background: #0e7a40; }
+
+    /* ---------- Anuncie ---------- */
+    .advertise { margin-top: 56px; }
+    .adv-grid { display: grid; grid-template-columns: 1.1fr 2fr; gap: 48px; align-items: start; }
+    .adv-intro h2 { font-family: var(--serif); font-size: 34px; line-height: 1.08; font-weight: 700; letter-spacing: -.02em; margin: 0 0 12px; }
+    .adv-intro p { color: var(--muted); margin: 0 0 20px; font-size: 15px; }
+    .adv-formats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+    .adv-formats div { background: #fff; padding: 20px 20px 22px; }
+    .adv-formats b { display: block; font-family: var(--serif); font-size: 19px; font-weight: 600; margin-bottom: 4px; }
+    .adv-formats span { display: block; font-size: 12.5px; color: var(--muted); line-height: 1.45; }
+    .adv-formats em { display: inline-block; font-style: normal; font-size: 10.5px; font-weight: 700; letter-spacing: .08em; color: var(--brand); margin-bottom: 10px; text-transform: uppercase; }
+
+    /* ---------- Rodapé ---------- */
+    footer { background: var(--navy); color: rgba(255,255,255,.66); margin-top: 64px; padding: 52px 0 26px; font-size: 13.5px; }
+    .foot-top { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 40px; padding-bottom: 38px; border-bottom: 1px solid rgba(255,255,255,.12); }
+    .foot-logo { font-family: var(--serif); font-weight: 800; font-size: 38px; letter-spacing: -.02em; color: #fff; line-height: 1; display: flex; align-items: baseline; }
+    .foot-logo b { color: #7ea5f5; margin-right: .2em; }
+    .foot-logo i { width: 7px; height: 7px; background: var(--gold); display: inline-block; margin-left: 3px; }
+    .foot-about p { margin: 14px 0 18px; max-width: 330px; line-height: 1.6; }
+    footer h3 { color: #fff; font-size: 11.5px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; margin: 6px 0 14px; }
+    footer ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 9px; }
+    footer ul a:hover { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
+    footer .social a { color: rgba(255,255,255,.75); border: 1px solid rgba(255,255,255,.18); width: 34px; height: 34px; }
+    footer .social a:hover { color: var(--navy); background: #fff; }
+    .foot-bottom { display: flex; justify-content: space-between; gap: 20px; padding-top: 20px; font-size: 12px; color: rgba(255,255,255,.5); }
+    .foot-bottom a { color: var(--gold); }
+    .foot-note { margin-top: 14px; font-size: 11px; color: rgba(255,255,255,.38); line-height: 1.55; max-width: 900px; }
+
+    /* ---------- Página de editoria ---------- */
+    .section-page { padding-top: 34px; }
+    .sp-head { border-bottom: 1px solid var(--line); padding-bottom: 22px; margin-bottom: 30px; }
+    .sp-head h1 { font-family: var(--serif); font-size: 54px; font-weight: 700; letter-spacing: -.025em; margin: 6px 0 6px; line-height: 1; }
+    .sp-head p { margin: 0; color: var(--muted); font-size: 16px; }
+    .crumbs { font-size: 12.5px; color: var(--muted); display: flex; gap: 8px; align-items: center; }
+    .crumbs a:hover { color: var(--brand); }
+    .crumbs a { color: var(--brand); font-weight: 600; }
+    .sp-top { display: grid; grid-template-columns: 1.5fr 1fr; gap: 36px; padding-bottom: 30px; border-bottom: 1px solid var(--line); }
+    .sp-top .ph { aspect-ratio: 16 / 10; margin-bottom: 14px; }
+    .sp-top .lead-hl { font-size: 36px; font-weight: 700; line-height: 1.08; }
+    .sp-top .side .story + .story { border-top: 1px solid var(--line); margin-top: 18px; padding-top: 18px; }
+    .sp-top .side .ph { aspect-ratio: 16 / 9; margin-bottom: 10px; }
+    .sp-top .side .hl { font-size: 21px; }
+
+    /* ---------- Matéria ---------- */
+    .article { padding-top: 30px; }
+    .art-grid { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 56px; align-items: start; }
+    .art-head { max-width: 820px; }
+    .art-head h1 { font-family: var(--serif); font-size: 46px; line-height: 1.07; font-weight: 700; letter-spacing: -.022em; margin: 10px 0 14px; font-variation-settings: 'opsz' 60; text-wrap: balance; }
+    .art-head.is-opinion h1 { font-style: italic; font-weight: 500; }
+    .art-deck { font-family: var(--serif); font-size: 21px; line-height: 1.42; color: var(--ink-2); margin: 0; font-weight: 400; }
+    .byline { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; margin-top: 22px; padding: 14px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .by-who { display: flex; align-items: center; gap: 12px; font-size: 13px; color: var(--muted); line-height: 1.45; }
+    .by-who strong { color: var(--ink); font-weight: 700; }
+    .by-who .avatar { width: 42px; height: 42px; font-size: 16px; }
+    .by-mark { width: 42px; height: 42px; display: grid; place-items: center; background: var(--brand); color: #fff; font-family: var(--serif); font-weight: 700; font-size: 15px; box-shadow: inset 0 -4px 0 var(--gold); }
+    .tools { display: flex; align-items: center; gap: 6px; }
+    .tool { width: 36px; height: 36px; display: grid; place-items: center; border: 1px solid var(--line); border-radius: 50%; color: var(--ink-2); transition: all .15s; }
+    .tool:hover { border-color: var(--ink); color: var(--ink); }
+    .tool svg { width: 16px; height: 16px; }
+    .tool.wa { background: #128c4a; border-color: #128c4a; color: #fff; }
+    .tool.wa:hover { background: #0e7a40; }
+    .tool-sep { width: 1px; height: 22px; background: var(--line); margin: 0 4px; }
+    .tool.txt { font-family: var(--serif); font-weight: 700; font-size: 14px; }
+    .art-figure { margin: 26px 0 0; }
+    .art-figure .ph { aspect-ratio: 16 / 9; }
+    .art-figure figcaption { font-size: 13px; color: var(--muted); padding: 9px 0 0; line-height: 1.45; }
+    .art-figure figcaption span { color: var(--faint); }
+    .art-body { max-width: 680px; margin-top: 30px; --fs: 19px; }
+    .art-body p { font-family: var(--serif); font-size: var(--fs); line-height: 1.68; margin: 0 0 22px; color: #1d2228; font-variation-settings: 'opsz' 16; }
+    .art-body > p:first-of-type::first-letter { font-size: 3.45em; float: left; line-height: .86; font-weight: 700; margin: .06em .1em 0 0; color: var(--navy); }
+    .art-body h2 { font-family: var(--sans); font-size: 19px; font-weight: 800; letter-spacing: -.005em; margin: 34px 0 12px; }
+    .art-body ul { margin: 0 0 26px; padding: 0; list-style: none; }
+    .art-body li { position: relative; padding-left: 22px; margin: 10px 0; font-family: var(--serif); font-size: calc(var(--fs) - 1px); line-height: 1.55; }
+    .art-body li::before { content: ''; position: absolute; left: 2px; top: .62em; width: 7px; height: 7px; background: var(--brand); }
+    .art-service { border-top: 3px solid var(--gold); background: var(--gold-soft); padding: 18px 22px 20px; margin: 30px 0; }
+    .art-service strong { display: block; font-size: 11.5px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: #6f4e00; margin-bottom: 6px; }
+    .art-service p { font-family: var(--sans) !important; font-size: 15px !important; line-height: 1.55 !important; margin: 0 !important; color: #3d3523 !important; }
+    .art-source { margin-top: 30px; padding: 16px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); font-size: 13.5px; color: var(--muted); display: flex; gap: 12px; align-items: flex-start; }
+    .art-source svg { flex: 0 0 18px; width: 18px; height: 18px; margin-top: 2px; color: var(--brand); }
+    .art-source a { color: var(--brand); font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+    .tags a { font-size: 12.5px; font-weight: 600; padding: 6px 12px; background: var(--paper-3); color: var(--ink-2); }
+    .tags a:hover { background: var(--ink); color: #fff; }
+    .art-foot { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: 22px; font-size: 13px; color: var(--muted); }
+    .art-foot button { color: var(--brand); font-weight: 600; font-size: 13px; text-decoration: underline; text-underline-offset: 2px; }
+    .art-rail { position: sticky; top: 74px; display: grid; gap: 34px; }
+    .read-next { margin-top: 50px; }
+
+    /* ---------- Modais ---------- */
+    .backdrop { position: fixed; inset: 0; background: rgba(6,12,24,.74); display: none; place-items: center; padding: 20px; z-index: 60; }
+    .backdrop.open { display: grid; animation: fade .2s ease; }
+    @keyframes fade { from { opacity: 0; } }
+    .x-btn { position: absolute; top: 14px; right: 14px; width: 38px; height: 38px; border-radius: 50%; display: grid; place-items: center; background: var(--paper-3); color: var(--ink); font-size: 22px; line-height: 1; }
+    .x-btn:hover { background: var(--line); }
+    .rights-modal { background: #fff; width: min(600px, 100%); padding: 34px 34px 30px; position: relative; box-shadow: 0 30px 80px rgba(0,0,0,.35); border-top: 4px solid var(--gold); }
+    .rights-modal .kicker { color: #8a5a00; }
+    .rights-modal h2 { font-family: var(--serif); font-size: 29px; line-height: 1.12; font-weight: 700; letter-spacing: -.015em; margin: 4px 40px 14px 0; }
+    .rights-modal p { color: #4a525d; font-size: 14px; line-height: 1.62; margin: 0 0 14px; }
+    .rights-modal .legal-reference { font-size: 12px; color: var(--muted); background: var(--paper-3); padding: 12px 14px; border-left: 3px solid var(--line-2); }
+    .rights-modal .btn { margin-top: 8px; }
+
+    .search-panel { position: fixed; inset: 0 0 auto; background: #fff; z-index: 61; padding: 30px 0 34px; box-shadow: 0 20px 50px rgba(0,0,0,.2); transform: translateY(-105%); transition: transform .25s ease; max-height: 100vh; overflow: auto; }
+    .search-panel.open { transform: none; }
+    .search-panel .wrap { position: relative; }
+    .search-field { display: flex; align-items: center; gap: 14px; border-bottom: 2px solid var(--ink); padding-bottom: 10px; margin-right: 56px; }
+    .search-field svg { width: 26px; height: 26px; flex: 0 0 26px; color: var(--muted); }
+    .search-field input { flex: 1; min-width: 0; border: 0; outline: 0; font-family: var(--serif); font-size: 32px; padding: 4px 0; background: transparent; }
+    .search-panel .x-btn { top: 2px; right: 0; }
+    .search-hint { margin: 14px 0 0; font-size: 13px; color: var(--muted); display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+    .search-hint button { padding: 5px 11px; background: var(--paper-3); font-weight: 600; font-size: 12.5px; }
+    .search-hint button:hover { background: var(--ink); color: #fff; }
+    .search-results { margin-top: 18px; display: grid; grid-template-columns: 1fr 1fr; gap: 0 36px; }
+    .search-results a { display: grid; grid-template-columns: 96px 1fr; gap: 14px; padding: 14px 0; border-top: 1px solid var(--line); align-items: center; }
+    .search-results .ph { aspect-ratio: 3 / 2; }
+    .search-results .hl { font-size: 17px; line-height: 1.25; }
+    .search-results a:hover .hl { color: var(--brand-dark); }
+    .search-results mark { background: #fff0bf; color: inherit; }
+
+    .drawer { position: fixed; inset: 0 auto 0 0; width: min(360px, 88vw); background: #fff; z-index: 62; transform: translateX(-102%); transition: transform .25s ease; overflow: auto; padding: 22px 28px 30px; }
+    .drawer.open { transform: none; box-shadow: 20px 0 60px rgba(0,0,0,.25); }
+    .drawer .x-btn { top: 16px; right: 16px; }
+    .drawer-logo { font-family: var(--serif); font-weight: 800; font-size: 28px; letter-spacing: -.02em; display: flex; align-items: baseline; margin: 2px 0 26px; }
+    .drawer-logo b { color: var(--brand); margin-right: .2em; }
+    .drawer-logo i { width: 6px; height: 6px; background: var(--gold); display: inline-block; margin-left: 2px; }
+    .drawer h4 { font-size: 11px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--faint); margin: 22px 0 6px; }
+    .drawer a { display: flex; justify-content: space-between; align-items: center; padding: 11px 0; border-bottom: 1px solid var(--line); font-family: var(--serif); font-size: 20px; font-weight: 600; }
+    .drawer a:hover { color: var(--brand); }
+    .drawer a svg { width: 16px; height: 16px; color: var(--faint); }
+    .drawer .sm a { font-family: var(--sans); font-size: 14.5px; font-weight: 500; padding: 9px 0; }
+    .scrim { position: fixed; inset: 0; background: rgba(6,12,24,.5); z-index: 59; opacity: 0; pointer-events: none; transition: opacity .25s; }
+    .scrim.open { opacity: 1; pointer-events: auto; }
+
+    .lightbox { width: min(1100px, 100%); position: relative; }
+    .lightbox img { width: 100%; max-height: 78vh; object-fit: contain; background: #000; }
+    .lightbox p { color: #fff; margin: 12px 0 0; font-family: var(--serif); font-size: 18px; }
+    .lightbox p small { display: block; font-family: var(--sans); font-size: 12px; color: rgba(255,255,255,.6); margin-top: 3px; }
+    .lightbox .x-btn { top: -50px; right: 0; background: rgba(255,255,255,.14); color: #fff; }
+    .lb-nav { position: absolute; top: 40%; width: 46px; height: 46px; border-radius: 50%; background: rgba(255,255,255,.92); display: grid; place-items: center; }
+    .lb-nav svg { width: 20px; height: 20px; }
+    .lb-prev { left: 14px; } .lb-next { right: 14px; }
+
+    .toast { position: fixed; left: 50%; bottom: 26px; transform: translate(-50%, 20px); background: var(--ink); color: #fff; padding: 12px 18px; font-size: 13.5px; font-weight: 500; z-index: 80; opacity: 0; transition: all .25s; pointer-events: none; max-width: calc(100% - 32px); }
+    .toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+    [hidden] { display: none !important; }
+
+    /* ---------- Responsivo ---------- */
+    @media (max-width: 1140px) {
+      .front { grid-template-columns: 250px minmax(0, 1fr); }
+      .front > .front-right { grid-column: 1 / -1; border-left: 0; padding: 30px 0 0; margin-top: 30px; border-top: 1px solid var(--line); display: grid; grid-template-columns: 1.4fr 1fr; gap: 36px; }
+      .front > .front-center { padding-right: 0; }
+      .service-mini { margin-top: 0; align-self: start; }
+      .lead .hl { font-size: 38px; }
+      .grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 960px) {
+      .wrap { width: min(var(--wrap), calc(100% - 40px)); }
+      .masthead .wrap { padding: 16px 0 14px; }
+      .logo-word { font-size: 44px; }
+      .mh-right .btn-outline { display: none; }
+      .nav-list { justify-content: flex-start; }
+      .front { grid-template-columns: 1fr; }
+      .front > * { padding: 0 !important; border-left: 0 !important; }
+      .front > .front-center { order: -1; }
+      .front-left { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 22px; }
+      .front-left .story + .story { border-top: 0; padding-top: 0; margin-top: 0; }
+      .front-left .story:first-child { grid-row: span 2; }
+      .front-left .story:nth-child(3) { border-top: 1px solid var(--line); padding-top: 18px; }
+      .split, .art-grid { grid-template-columns: minmax(0, 1fr); }
+      .split > .rail { position: static; }
+      .rail { grid-template-columns: 1fr 1fr; align-items: start; }
+      .art-rail { position: static; grid-template-columns: 1fr 1fr; }
+      .cols-3 { grid-template-columns: 1fr; gap: 34px; }
+      .col-block { display: grid; grid-template-columns: 1fr 1fr; gap: 0 28px; }
+      .col-block .sec-head { grid-column: 1 / -1; }
+      .col-block .story { grid-row: span 3; }
+      .col-block .story + .mini { margin-top: 0; }
+      .col-block .mini:first-of-type { border-top: 0; padding-top: 0; }
+      .opinion-grid { grid-template-columns: 1fr; }
+      .opinion-grid > a { padding: 18px 0 !important; border-left: 0 !important; }
+      .opinion-grid > a + a { border-top: 1px solid #ddd6c8; }
+      .gallery { grid-template-columns: 1fr 1fr; grid-template-rows: 300px 180px 180px; }
+      .gallery button:first-child { grid-column: 1 / -1; grid-row: auto; }
+      .gallery button:nth-child(n+6) { display: none; }
+      .subscribe .wrap { grid-template-columns: 1fr; }
+      .sub-card, .sub-card + .sub-card { padding: 30px 0; border-left: 0; }
+      .sub-card + .sub-card { border-top: 1px solid var(--line); }
+      .adv-grid { grid-template-columns: 1fr; gap: 26px; }
+      .foot-top { grid-template-columns: 1fr 1fr; }
+      .foot-about { grid-column: 1 / -1; }
+      .sp-top { grid-template-columns: 1fr; }
+      .art-head h1 { font-size: 40px; }
+    }
+    @media (max-width: 680px) {
+      body { font-size: 14.5px; }
+      .wrap { width: calc(100% - 32px); }
+      .rights-strip .wrap { padding: 6px 0; flex-wrap: wrap; gap: 4px 8px; line-height: 1.4; font-size: 10.5px; }
+      .rights-strip span { display: none; }
+      .utility { display: none; }
+      .masthead .wrap { grid-template-columns: 44px 1fr 44px; gap: 8px; padding: 12px 0; }
+      .icon-btn { padding: 0; width: 44px; justify-content: center; }
+      .icon-btn .lbl, .mh-left .search-btn, .mh-right .btn { display: none; }
+      .mh-right .m-search { display: inline-flex !important; }
+      .logo-word { font-size: 34px; }
+      .logo-sub { font-size: 8.5px; letter-spacing: .26em; }
+      .nav { border-top-color: var(--line); }
+      .nav-list { min-height: 44px; gap: 0; padding: 0 6px; margin: 0 -16px; width: calc(100% + 32px); }
+      .nav-link { font-size: 13px; padding: 12px 10px; }
+      .nav-link::after { left: 10px; right: 10px; }
+      .sticky-bar .nav-list { display: none; }
+      .sticky-bar .wrap { justify-content: space-between; height: 50px; }
+      .ticker-ctrl { display: none; }
+      .ticker-item span { font-size: 13.5px; }
+      .front { margin-top: 18px; }
+      .lead .ph { margin: 0 -16px 14px; aspect-ratio: 4 / 3; }
+      .lead .hl { font-size: 31px; }
+      .lead .deck { font-size: 16.5px; }
+      .lead-related a { font-size: 16px; }
+      .front-left { grid-template-columns: 1fr; gap: 0; }
+      .front-left .story + .story { border-top: 1px solid var(--line); padding-top: 16px; margin-top: 16px; }
+      .front-left .story:first-child { grid-row: auto; }
+      .front-left .story:first-child { display: grid; grid-template-columns: minmax(0, 1fr) 112px; gap: 14px; }
+      .front-left .story:first-child .ph { order: 2; aspect-ratio: 1; margin: 0; }
+      .front-left .hl { font-size: 20px; }
+      .front > .front-right { grid-template-columns: 1fr; gap: 28px; }
+      section { margin-top: 36px; }
+      .sec-links { display: none; }
+      .grid-4 { grid-template-columns: 1fr; gap: 0; }
+      .grid-4 .story { display: grid; grid-template-columns: minmax(0, 1fr) 112px; gap: 14px; padding: 16px 0; border-bottom: 1px solid var(--line); }
+      .grid-4 .story:first-child { padding-top: 0; }
+      .grid-4 .ph { order: 2; aspect-ratio: 1; margin: 0; }
+      .grid-4 .deck { display: none; }
+      .grid-4 .hl { font-size: 18px; }
+      .feed-item { grid-template-columns: minmax(0, 1fr) 104px; gap: 14px; padding: 18px 0; }
+      .feed-time { grid-column: 1 / -1; display: flex; gap: 8px; padding: 0; }
+      .feed-item .hl { font-size: 19px; }
+      .feed-item .deck { display: none; }
+      .feed-item .ph { aspect-ratio: 1; }
+      .chips { flex-wrap: nowrap; overflow-x: auto; margin: -6px -16px 6px; padding: 0 16px; scrollbar-width: none; }
+      .chip { flex: 0 0 auto; }
+      .rail, .art-rail { grid-template-columns: 1fr; }
+      .ad-wide { margin-top: 32px; }
+      .ad-board { flex-direction: column; align-items: flex-start; padding: 20px 22px 22px 28px; gap: 14px; }
+      .ad-board strong { font-size: 21px; }
+      .col-block { grid-template-columns: 1fr; }
+      .col-block .story { grid-row: auto; }
+      .col-block .story + .mini { margin-top: 16px; }
+      .col-block .mini:first-of-type { border-top: 1px solid var(--line); padding-top: 13px; }
+      .opinion-band { padding: 30px 0 30px; margin-top: 40px; }
+      .opinion-grid .hl { font-size: 20px; }
+      .opinion-grid > a { grid-template-columns: 48px 1fr; gap: 14px; }
+      .opinion-grid .avatar { width: 48px; height: 48px; font-size: 18px; }
+      .gallery { grid-template-columns: 1fr 1fr; grid-template-rows: 240px 140px 140px; gap: 6px; }
+      .gallery .cap { font-size: 14px; left: 10px; right: 10px; bottom: 9px; }
+      .gallery small { display: none; }
+      .gallery button:first-child .cap { font-size: 20px; left: 14px; bottom: 14px; }
+      .gallery button:first-child small { display: block; }
+      .sub-card { grid-template-columns: 1fr; gap: 14px; }
+      .sub-card h2 { font-size: 24px; }
+      .news-form { flex-direction: column; }
+      .adv-formats { grid-template-columns: 1fr; }
+      .adv-intro h2 { font-size: 28px; }
+      .foot-top { grid-template-columns: 1fr 1fr; gap: 30px 20px; }
+      .foot-bottom { flex-direction: column; gap: 6px; }
+      .sp-head h1 { font-size: 40px; }
+      .sp-top .lead-hl { font-size: 28px; }
+      .art-head h1 { font-size: 31px; line-height: 1.1; }
+      .art-deck { font-size: 18px; }
+      .byline { flex-direction: column; align-items: flex-start; }
+      .art-figure { margin-left: -16px; margin-right: -16px; }
+      .art-figure figcaption { padding: 9px 16px 0; }
+      .art-body { --fs: 18px; }
+      .search-field input { font-size: 22px; }
+      .search-results { grid-template-columns: 1fr; }
+      .rights-modal { padding: 28px 22px 24px; }
+      .rights-modal h2 { font-size: 24px; }
+    }
+    .m-search { display: none !important; }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-4.2-4.2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-left" viewBox="0 0 24 24"><path d="m15 6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><g stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></g></symbol>
+    <symbol id="i-cloudsun" viewBox="0 0 24 24"><circle cx="9" cy="9" r="3.6" fill="currentColor"/><g stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M9 2.6v1.4M3.6 9H2.2M4.6 4.6l1 1M13.4 4.6l-1 1"/></g><path d="M8.5 19.5h9a3.5 3.5 0 0 0 .3-7 5 5 0 0 0-9.4 1.3A2.9 2.9 0 0 0 8.5 19.5Z" fill="#c9d3e3"/></symbol>
+    <symbol id="i-rain" viewBox="0 0 24 24"><path d="M7.5 15h10a3.5 3.5 0 0 0 .3-7 5 5 0 0 0-9.4 1.3A2.9 2.9 0 0 0 7.5 15Z" fill="#b8c4d8"/><path d="M9 18l-1 2.5M13 18l-1 2.5M17 18l-1 2.5" stroke="#1d4fb5" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.8-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.4-.3Z"/></symbol>
+    <symbol id="i-fb" viewBox="0 0 24 24"><path fill="currentColor" d="M13.5 21v-7.5H16l.4-3H13.5V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4a21 21 0 0 0-2.3-.1c-2.3 0-3.9 1.4-3.9 4v2.2H7.8v3h2.6V21h3.1Z"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.9"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.9"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path fill="currentColor" d="M17.8 3h3.1l-6.8 7.8 8 10.2h-6.3l-4.9-6.4L5.3 21H2.2l7.3-8.3L1.8 3h6.4l4.4 5.8L17.8 3Zm-1.1 16.2h1.7L7.3 4.7H5.5l11.2 14.5Z"/></symbol>
+    <symbol id="i-yt" viewBox="0 0 24 24"><path fill="currentColor" d="M22 8.2a3 3 0 0 0-2.1-2.1C18 5.6 12 5.6 12 5.6s-6 0-7.9.5A3 3 0 0 0 2 8.2 31 31 0 0 0 1.6 12 31 31 0 0 0 2 15.8a3 3 0 0 0 2.1 2.1c1.9.5 7.9.5 7.9.5s6 0 7.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .4-3.8 31 31 0 0 0-.4-3.8ZM10 15V9l5.2 3L10 15Z"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4.5 4.5 0 0 0 6.4 0l3-3a4.5 4.5 0 0 0-6.4-6.4l-1 1M14 10a4.5 4.5 0 0 0-6.4 0l-3 3a4.5 4.5 0 0 0 6.4 6.4l1-1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="m3.5 6 8.5 7 8.5-7" fill="none" stroke="currentColor" stroke-width="1.9"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 3H6.5A1.5 1.5 0 0 0 5 4.5v15A1.5 1.5 0 0 0 6.5 21h11a1.5 1.5 0 0 0 1.5-1.5V8l-5-5Z M14 3v5h5M8.5 13h7M8.5 16.5h7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><path d="M4 7.5h3l1.6-2.5h6.8L17 7.5h3a1 1 0 0 1 1 1V19a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8.5a1 1 0 0 1 1-1Z" fill="none" stroke="currentColor" stroke-width="1.9"/><circle cx="12" cy="13.2" r="3.6" fill="none" stroke="currentColor" stroke-width="1.9"/></symbol>
+    <symbol id="i-gnews" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M7 9.5h5M7 12.5h5M7 15.5h10M14.5 9.5h2.5v3h-2.5z" stroke="currentColor" stroke-width="1.7"/></symbol>
+  </svg>
+
+  <div class="rights-strip" role="note">
+    <div class="wrap"><strong>Direitos reservados</strong><span>Layout, identidade visual, código e composição desenvolvidos pela Flash Sites para o RD NEWS. Reprodução ou adaptação somente com autorização.</span><button type="button" id="rightsOpen">Entenda</button></div>
+  </div>
+
+  <div class="utility">
+    <div class="wrap">
+      <div class="utility-left">
+        <span class="utility-date">Sexta-feira, 9 de outubro de 2026</span>
+        <span class="utility-sep"></span>
+        <span class="utility-weather"><svg><use href="#i-cloudsun"/></svg>Porto Velho <b>33°</b></span>
+        <span class="utility-sep"></span>
+        <span>Edição Rondônia</span>
+      </div>
+      <div class="utility-right">
+        <div class="social" aria-label="Redes sociais">
+          <a href="#sobre" aria-label="Instagram"><svg><use href="#i-ig"/></svg></a>
+          <a href="#sobre" aria-label="Facebook"><svg><use href="#i-fb"/></svg></a>
+          <a href="#sobre" aria-label="X"><svg><use href="#i-x"/></svg></a>
+          <a href="#sobre" aria-label="YouTube"><svg><use href="#i-yt"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="masthead" id="masthead">
+    <div class="wrap">
+      <div class="mh-left">
+        <button class="icon-btn" type="button" data-open-drawer aria-label="Abrir seções"><svg><use href="#i-menu"/></svg><span class="lbl">Seções</span></button>
+        <button class="icon-btn search-btn" type="button" data-open-search aria-label="Buscar"><svg><use href="#i-search"/></svg><span class="lbl">Buscar</span></button>
+      </div>
+      <a class="logo" href="#inicio" aria-label="RD NEWS — página inicial">
+        <span class="logo-word"><b>RD</b>NEWS<i></i></span>
+        <span class="logo-sub">Porto Velho · Rondônia</span>
+      </a>
+      <div class="mh-right">
+        <a class="btn btn-outline" href="#receba"><svg><use href="#i-mail"/></svg>Newsletter</a>
+        <a class="btn btn-solid" href="#anuncie">Anuncie</a>
+        <button class="icon-btn m-search" type="button" data-open-search aria-label="Buscar"><svg><use href="#i-search"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="nav" aria-label="Editorias">
+    <div class="wrap"><div class="nav-list" data-nav></div></div>
+  </nav>
+
+  <div class="sticky-bar" id="stickyBar" aria-hidden="true">
+    <div class="wrap">
+      <button class="icon-btn" type="button" data-open-drawer aria-label="Abrir seções" tabindex="-1"><svg><use href="#i-menu"/></svg></button>
+      <a class="sticky-logo" href="#inicio" tabindex="-1"><b>RD</b>NEWS<i></i></a>
+      <div class="nav-list" data-nav data-compact></div>
+      <button class="icon-btn" type="button" data-open-search aria-label="Buscar" tabindex="-1"><svg><use href="#i-search"/></svg></button>
+    </div>
+    <div class="progress" id="progress"></div>
+  </div>
+
+  <div class="ticker" id="tickerBar">
+    <div class="wrap">
+      <span class="ticker-label"><span class="pulse"></span>Agora</span>
+      <div class="ticker-track" id="ticker"></div>
+      <div class="ticker-ctrl"><button type="button" id="tickPrev" aria-label="Anterior"><svg><use href="#i-left"/></svg></button><button type="button" id="tickNext" aria-label="Próxima"><svg><use href="#i-right"/></svg></button></div>
+    </div>
+  </div>
+
+  <main id="conteudo">
+    <!-- ===================== HOME ===================== -->
+    <div id="homeView">
+      <div class="wrap">
+        <div class="front" aria-label="Destaques">
+          <div class="front-left" id="frontLeft"></div>
+          <div class="front-center lead" id="frontLead"></div>
+          <aside class="front-right">
+            <div>
+              <h2 class="rank-title">Mais lidas <small>hoje</small></h2>
+              <ol class="rank" id="mostRead"></ol>
+            </div>
+            <div class="service-mini">
+              <h3>Utilidade pública</h3>
+              <a href="#materia/cadastro-unico">Cadastro Único fora do ar nesta sexta<small>Atendimento volta na terça-feira (13)</small></a>
+              <a href="#materia/conciliacao">Triagens da Semana de Conciliação<small>Até 30 de outubro, em faculdades da capital</small></a>
+              <a href="#materia/cultura-toninho">Ingressos gratuitos no Sympla<small>Show no Teatro Palácio das Artes</small></a>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <div class="ad-wide">
+        <div class="wrap ad-slot">
+          <span class="ad-label">Publicidade</span>
+          <a class="ad-board" href="#anuncie">
+            <div><strong>Sua marca na página que <em>Porto Velho</em> lê todo dia.</strong><span>Super banner 970×90 · formatos para todo o portal</span></div>
+            <span class="btn btn-gold">Anuncie no RD NEWS</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <section aria-labelledby="pvh-title">
+          <div class="sec-head">
+            <h2 class="sec-title" id="pvh-title"><a href="#editoria/cidade">Porto Velho</a></h2>
+            <nav class="sec-links" aria-label="Porto Velho"><a href="#editoria/cidade">Cidade</a><a href="#editoria/servico">Serviço</a><a href="#editoria/saude">Saúde</a><a href="#editoria/esporte">Esporte</a></nav>
+          </div>
+          <div class="grid-4" id="cityGrid"></div>
+        </section>
+
+        <section id="ultimas" aria-labelledby="ultimas-title">
+          <div class="split">
+            <div>
+              <div class="sec-head"><h2 class="sec-title" id="ultimas-title">Últimas notícias</h2><span class="meta" style="margin:0">Atualizado às 11h05</span></div>
+              <div class="chips" id="chips" role="tablist" aria-label="Filtrar por editoria"></div>
+              <div id="feed"></div>
+              <button class="more-btn" type="button" id="moreBtn">Carregar mais notícias</button>
+            </div>
+            <aside class="rail">
+              <div class="weather" aria-label="Tempo em Porto Velho">
+                <div class="weather-top"><span class="weather-city">Porto Velho<small>Sexta, 9 de outubro</small></span></div>
+                <div class="weather-now"><svg><use href="#i-cloudsun"/></svg><strong>33°</strong><p><b>Sol entre nuvens</b>Máx. 35° · Mín. 23°<br />Umidade 48%</p></div>
+                <div class="weather-days">
+                  <div>Sáb<svg><use href="#i-sun"/></svg><b>35°</b>23°</div>
+                  <div>Dom<svg><use href="#i-cloudsun"/></svg><b>34°</b>24°</div>
+                  <div>Seg<svg><use href="#i-rain"/></svg><b>31°</b>23°</div>
+                  <div>Ter<svg><use href="#i-cloudsun"/></svg><b>33°</b>23°</div>
+                </div>
+              </div>
+              <div class="ad-slot">
+                <span class="ad-label">Publicidade</span>
+                <a class="ad-box" href="#anuncie">
+                  <span class="ad-brand"><b>RD</b>NEWS<i></i></span>
+                  <div><strong>Fale com quem vive Rondônia.</strong><p>Retângulo 300×250 · campanhas segmentadas por editoria.</p><span class="btn btn-gold">Conheça os formatos</span></div>
+                </a>
+              </div>
+              <div class="rail-box">
+                <h3>Telefones úteis</h3>
+                <div class="phones">
+                  <a href="tel:192"><b>192</b><span>Samu</span></a>
+                  <a href="tel:193"><b>193</b><span>Bombeiros</span></a>
+                  <a href="tel:190"><b>190</b><span>Polícia Militar</span></a>
+                  <a href="tel:199"><b>199</b><span>Defesa Civil</span></a>
+                  <a href="tel:185"><b>185</b><span>Emergência fluvial · Marinha</span></a>
+                  <a href="tel:180"><b>180</b><span>Central da Mulher</span></a>
+                  <a class="wide" href="tel:08006470120"><b>0800 647 0120</b><span>Energisa Rondônia · falta de energia</span></a>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </section>
+      </div>
+
+      <div class="opinion-band">
+        <div class="wrap">
+          <section aria-labelledby="op-title">
+            <div class="sec-head"><h2 class="sec-title" id="op-title"><a href="#editoria/opiniao">Opinião</a></h2><a class="sec-more" href="#editoria/opiniao">Todas as colunas <svg width="14" height="14"><use href="#i-arrow"/></svg></a></div>
+            <div class="opinion-grid" id="opinionGrid"></div>
+          </section>
+        </div>
+      </div>
+
+      <div class="gallery-band">
+        <div class="wrap">
+          <section aria-labelledby="gal-title">
+            <div class="sec-head"><h2 class="sec-title" id="gal-title"><svg><use href="#i-camera"/></svg>Porto Velho em imagens</h2><span class="sec-links">Fotos da capital e do Rio Madeira</span></div>
+            <div class="gallery" id="gallery"></div>
+          </section>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <section aria-label="Editorias">
+          <div class="cols-3" id="cols"></div>
+        </section>
+      </div>
+
+      <div class="subscribe" id="receba">
+        <div class="wrap">
+          <div class="sub-card">
+            <span class="sub-icon" style="background:#e3f5ea;color:#128c4a"><svg><use href="#i-wa"/></svg></span>
+            <div>
+              <h2>Notícias de Porto Velho no seu WhatsApp</h2>
+              <p>As principais manchetes do dia, alertas de serviço e avisos urgentes, direto no canal do RD NEWS.</p>
+              <button class="btn btn-wa" type="button" id="waBtn"><svg><use href="#i-wa"/></svg>Entrar no canal</button>
+            </div>
+          </div>
+          <div class="sub-card">
+            <span class="sub-icon" style="background:#e6edfb;color:var(--brand)"><svg><use href="#i-mail"/></svg></span>
+            <div>
+              <h2>O essencial da capital, às 6h, no seu e-mail</h2>
+              <p>Um boletim curto, de segunda a sábado, com o que você precisa saber antes de sair de casa.</p>
+              <form class="news-form" id="newsletterForm" novalidate>
+                <label class="sr-only" for="newsletterEmail">Seu e-mail</label>
+                <input type="email" id="newsletterEmail" placeholder="seu@email.com" autocomplete="email" required />
+                <button class="btn btn-solid" type="submit">Quero receber</button>
+              </form>
+              <p class="form-note" id="newsletterStatus">Gratuito. Cancele quando quiser.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <section class="advertise" id="anuncie" aria-labelledby="adv-title">
+          <div class="sec-head"><h2 class="sec-title">Anuncie</h2></div>
+          <div class="adv-grid">
+            <div class="adv-intro">
+              <h2 id="adv-title">Sua marca ao lado da notícia que a cidade acompanha.</h2>
+              <p>Formatos display, conteúdo de marca e patrocínio de newsletter para negócios que querem falar com o público de Porto Velho e de Rondônia.</p>
+              <a class="btn btn-solid" href="#sobre">Falar com o comercial <svg><use href="#i-arrow"/></svg></a>
+            </div>
+            <div class="adv-formats">
+              <div><em>Display</em><b>Super banner</b><span>970×90 no topo da home e das editorias.</span></div>
+              <div><em>Display</em><b>Retângulo médio</b><span>300×250 na coluna lateral e dentro das matérias.</span></div>
+              <div><em>Conteúdo</em><b>Conteúdo de marca</b><span>Reportagens patrocinadas, sinalizadas ao leitor.</span></div>
+              <div><em>Newsletter</em><b>Boletim das 6h</b><span>Patrocínio exclusivo da edição do dia.</span></div>
+              <div><em>WhatsApp</em><b>Canal RD NEWS</b><span>Assinatura de marca em alertas de serviço.</span></div>
+              <div><em>Eventos</em><b>Agenda da cidade</b><span>Destaque na programação cultural da semana.</span></div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- ===================== EDITORIA ===================== -->
+    <div id="sectionView" hidden>
+      <div class="wrap section-page">
+        <div class="sp-head">
+          <div class="crumbs"><a href="#inicio">Início</a><span>/</span><span id="spCrumb"></span></div>
+          <h1 id="spTitle"></h1>
+          <p id="spDesc"></p>
+        </div>
+        <div class="sp-top" id="spTop"></div>
+        <div class="split" style="margin-top:8px">
+          <div id="spFeed"></div>
+          <aside class="rail" style="margin-top:22px">
+            <div class="rail-box"><h3>Mais lidas</h3><ol class="rank" data-rank></ol></div>
+            <div class="ad-slot"><span class="ad-label">Publicidade</span><a class="ad-box" href="#anuncie"><span class="ad-brand"><b>RD</b>NEWS<i></i></span><div><strong>Fale com quem vive Rondônia.</strong><p>Retângulo 300×250 · campanhas segmentadas por editoria.</p><span class="btn btn-gold">Conheça os formatos</span></div></a></div>
+          </aside>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== MATÉRIA ===================== -->
+    <article id="articleView" class="article" hidden>
+      <div class="wrap">
+        <div class="art-grid">
+          <div>
+            <div class="art-head" id="artHead">
+              <div class="crumbs"><a href="#inicio">Início</a><span>/</span><a id="artCrumb" href="#"></a></div>
+              <h1 id="artTitle"></h1>
+              <p class="art-deck" id="artDeck"></p>
+              <div class="byline">
+                <div class="by-who" id="artBy"></div>
+                <div class="tools">
+                  <a class="tool wa" id="shWa" target="_blank" rel="noopener" aria-label="Compartilhar no WhatsApp"><svg><use href="#i-wa"/></svg></a>
+                  <a class="tool" id="shFb" target="_blank" rel="noopener" aria-label="Compartilhar no Facebook"><svg><use href="#i-fb"/></svg></a>
+                  <a class="tool" id="shX" target="_blank" rel="noopener" aria-label="Compartilhar no X"><svg><use href="#i-x"/></svg></a>
+                  <button class="tool" type="button" id="shCopy" aria-label="Copiar link"><svg><use href="#i-link"/></svg></button>
+                  <span class="tool-sep"></span>
+                  <button class="tool txt" type="button" id="fontDown" aria-label="Diminuir texto">A−</button>
+                  <button class="tool txt" type="button" id="fontUp" aria-label="Aumentar texto">A+</button>
+                </div>
+              </div>
+            </div>
+            <figure class="art-figure" id="artFigure"><div class="ph"><img id="artImg" alt="" /></div><figcaption id="artCaption"></figcaption></figure>
+            <div class="art-body" id="artBody"></div>
+            <div style="max-width:680px">
+              <div class="art-source" id="artSource"></div>
+              <div class="tags" id="artTags"></div>
+              <div class="art-foot"><span>Siga o RD NEWS no WhatsApp e no Google Notícias.</span><button type="button" id="reportErr">Comunicar erro</button></div>
+            </div>
+          </div>
+          <aside class="art-rail">
+            <div class="rail-box"><h3>Mais lidas</h3><ol class="rank" data-rank></ol></div>
+            <div class="ad-slot"><span class="ad-label">Publicidade</span><a class="ad-box" href="#anuncie"><span class="ad-brand"><b>RD</b>NEWS<i></i></span><div><strong>Fale com quem vive Rondônia.</strong><p>Retângulo 300×250 · campanhas segmentadas por editoria.</p><span class="btn btn-gold">Conheça os formatos</span></div></a></div>
+          </aside>
+        </div>
+        <section class="read-next" aria-labelledby="rn-title">
+          <div class="sec-head"><h2 class="sec-title" id="rn-title">Leia também</h2></div>
+          <div class="grid-4" id="artRelated"></div>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <footer id="sobre">
+    <div class="wrap">
+      <div class="foot-top">
+        <div class="foot-about">
+          <div class="foot-logo"><b>RD</b>NEWS<i></i></div>
+          <p>Jornalismo regional com apuração, contexto e serviço. Porto Velho em pauta, Rondônia em movimento.</p>
+          <div class="social" aria-label="Redes sociais">
+            <a href="#sobre" aria-label="Instagram"><svg><use href="#i-ig"/></svg></a>
+            <a href="#sobre" aria-label="Facebook"><svg><use href="#i-fb"/></svg></a>
+            <a href="#sobre" aria-label="X"><svg><use href="#i-x"/></svg></a>
+            <a href="#sobre" aria-label="YouTube"><svg><use href="#i-yt"/></svg></a>
+            <a href="#receba" aria-label="WhatsApp"><svg><use href="#i-wa"/></svg></a>
+            <a href="#sobre" aria-label="Google Notícias"><svg><use href="#i-gnews"/></svg></a>
+          </div>
+        </div>
+        <div><h3>Editorias</h3><ul id="footEd"></ul></div>
+        <div><h3>RD NEWS</h3><ul><li><a href="#sobre">Quem somos</a></li><li><a href="#sobre">Expediente</a></li><li><a href="#sobre">Política editorial</a></li><li><a href="#sobre">Política de correções</a></li><li><a href="#sobre">Privacidade</a></li></ul></div>
+        <div><h3>Fale com a gente</h3><ul><li><a href="#sobre">Fale com a redação</a></li><li><a href="#sobre">Envie sua pauta</a></li><li><a href="#anuncie">Anuncie</a></li><li><a href="#receba">Newsletter</a></li><li><a href="#receba">Canal no WhatsApp</a></li></ul></div>
+      </div>
+      <div class="foot-bottom"><span>© 2026 RD NEWS · Porto Velho, Rondônia · Todos os direitos reservados.</span><span>Layout e desenvolvimento: <a href="#" data-rights>Flash Sites</a> · Uso reservado · Lei nº 9.610/98</span></div>
+      <p class="foot-note">Versão de apresentação. As matérias de serviço público foram reescritas a partir de fontes indicadas em cada página; colunistas, previsão do tempo, anúncios e parte dos textos são ilustrativos. Fotos: Wikimedia Commons (créditos e licenças nas legendas) e Unsplash.</p>
+    </div>
+  </footer>
+
+  <!-- Busca -->
+  <div class="search-panel" id="searchPanel" role="dialog" aria-modal="true" aria-label="Buscar no RD NEWS">
+    <div class="wrap">
+      <div class="search-field"><svg><use href="#i-search"/></svg><input id="searchInput" type="search" placeholder="Buscar no RD NEWS" aria-label="Buscar no RD NEWS" autocomplete="off" /></div>
+      <button class="x-btn" type="button" data-close-search aria-label="Fechar busca">×</button>
+      <div class="search-hint" id="searchHint">Mais buscados: <button type="button">Cadastro Único</button><button type="button">Câmara</button><button type="button">SUS</button><button type="button">Rio Madeira</button><button type="button">Teatro</button></div>
+      <div class="search-results" id="searchResults"></div>
+    </div>
+  </div>
+
+  <!-- Menu -->
+  <div class="scrim" id="scrim"></div>
+  <nav class="drawer" id="drawer" aria-label="Seções">
+    <button class="x-btn" type="button" data-close-drawer aria-label="Fechar menu">×</button>
+    <div class="drawer-logo"><b>RD</b>NEWS<i></i></div>
+    <h4>Editorias</h4>
+    <div id="drawerEd"></div>
+    <h4>RD NEWS</h4>
+    <div class="sm"><a href="#receba">Newsletter e WhatsApp</a><a href="#anuncie">Anuncie</a><a href="#sobre">Quem somos</a><a href="#sobre">Fale com a redação</a></div>
+  </nav>
+
+  <!-- Galeria -->
+  <div class="backdrop" id="lightbox" role="dialog" aria-modal="true" aria-label="Galeria de fotos">
+    <div class="lightbox">
+      <button class="x-btn" type="button" id="lbClose" aria-label="Fechar">×</button>
+      <img id="lbImg" alt="" />
+      <button class="lb-nav lb-prev" type="button" id="lbPrev" aria-label="Foto anterior"><svg><use href="#i-left"/></svg></button>
+      <button class="lb-nav lb-next" type="button" id="lbNext" aria-label="Próxima foto"><svg><use href="#i-right"/></svg></button>
+      <p id="lbCap"></p>
+    </div>
+  </div>
+
+  <!-- Aviso de direitos -->
+  <div class="backdrop" id="rightsModal" role="dialog" aria-modal="true" aria-labelledby="rightsTitle">
+    <div class="rights-modal">
+      <button class="x-btn" id="rightsClose" type="button" aria-label="Fechar aviso">×</button>
+      <span class="kicker">Aviso de direitos autorais</span>
+      <h2 id="rightsTitle">Este projeto tem autoria e uso reservado.</h2>
+      <p>O layout, a identidade visual, a composição das páginas, os textos autorais, o código e os elementos gráficos deste portal foram desenvolvidos pela Flash Sites para o RD NEWS. A reprodução, cópia, adaptação, distribuição, extração ou reutilização total ou parcial sem autorização prévia e expressa não é permitida.</p>
+      <p class="legal-reference">A proteção é informada com fundamento na Lei nº 9.610/1998, especialmente nos arts. 18, 22, 24, 28 e 29, que tratam da proteção independentemente de registro, da autoria, da integridade da obra e da autorização para reprodução e adaptação. O aviso se refere à expressão criativa original do projeto, não a ideias genéricas ou funcionalidades comuns de portais.</p>
+      <button class="btn btn-solid" id="rightsConfirm" type="button">Entendi</button>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    /* ============================================================
+       Editorias
+       ============================================================ */
+    const ED = {
+      cidade:   { name: 'Porto Velho', desc: 'O dia a dia da capital: bairros, serviços, mobilidade, meio ambiente e o Rio Madeira.' },
+      politica: { name: 'Política', desc: 'Câmara Municipal, Prefeitura, Assembleia Legislativa e Governo de Rondônia.' },
+      economia: { name: 'Economia', desc: 'Comércio, agronegócio, emprego e o bolso de quem vive em Rondônia.' },
+      saude:    { name: 'Saúde', desc: 'Rede pública, prevenção, campanhas e orientação para cuidar de quem você ama.' },
+      educacao: { name: 'Educação', desc: 'Escolas, concursos, universidades e o que muda na vida de alunos e professores.' },
+      servico:  { name: 'Serviço', desc: 'Prazos, atendimentos, documentos e avisos que ajudam a organizar a semana.' },
+      cultura:  { name: 'Cultura', desc: 'Agenda, música, teatro, patrimônio e a produção cultural da região.' },
+      esporte:  { name: 'Esporte', desc: 'Futebol, corrida de rua e o esporte amador e profissional de Rondônia.' },
+      opiniao:  { name: 'Opinião', desc: 'Colunas e análises sobre a cidade, a economia e a cultura de Rondônia.' }
+    };
+    const NAV = ['cidade', 'politica', 'economia', 'saude', 'educacao', 'servico', 'cultura', 'esporte', 'opiniao'];
+
+    /* ============================================================
+       Fotos (arquivos locais em /img) — crédito exibido na legenda
+       ============================================================ */
+    const IMG = {
+      feira:      { alt: 'Público circula entre estandes em evento no Porto Velho Shopping', credit: 'Mikéliton Alves/Wikimedia Commons (CC BY 4.0)', file: 'Imagem de arquivo de evento no Porto Velho Shopping' },
+      teatro:     { alt: 'Fachada do Teatro Palácio das Artes, em Porto Velho', credit: 'Socorrodados/Wikimedia Commons (CC0)' },
+      prefeitura: { alt: 'Sede da Prefeitura de Porto Velho', credit: 'Henrique/MTur Destinos (domínio público)' },
+      orla:       { alt: 'Porto Velho às margens do Rio Madeira, com a ponte ao fundo', credit: 'Silva Júnior/MTur (CC0)' },
+      efmm:       { alt: 'Galpões históricos da Estrada de Ferro Madeira-Mamoré', credit: 'Imagens de Rondônia (domínio público)' },
+      shopping:   { alt: 'Fachada do Porto Velho Shopping', credit: 'Christopher Krause/Wikimedia Commons (CC BY-SA 3.0)' },
+      sol:        { alt: 'Sol nasce sobre o Rio Madeira, em Porto Velho', credit: 'Imagens de Rondônia (domínio público)' },
+      caixas:     { alt: 'Vista aérea da Praça das Três Caixas d’Água', credit: 'Silva Júnior/MTur Destinos (domínio público)' },
+      caixas2:    { alt: 'Praça das Três Caixas d’Água', credit: 'Imagens de Rondônia (domínio público)' },
+      catedral:   { alt: 'Catedral Metropolitana de Porto Velho iluminada à noite', credit: 'Henrique/MTur Destinos (domínio público)' },
+      crepusculo: { alt: 'Fim de tarde no Rio Madeira', credit: 'Cleber Rech/Wikimedia Commons (CC BY 2.0)' },
+      aerea:      { alt: 'Vista aérea do Centro de Porto Velho', credit: 'Cleber Rech/Wikimedia Commons (CC BY 2.0)' },
+      mercado:    { alt: 'Interior do Mercado Cultural de Porto Velho', credit: 'Henrique/MTur Destinos (domínio público)' },
+      ponte:      { alt: 'Ponte sobre o Rio Madeira vista do alto', credit: 'Silva Júnior/MTur (CC0)' },
+      tjro:       { alt: 'Sede do Tribunal de Justiça de Rondônia, em Porto Velho', credit: 'Filipux/Wikimedia Commons (CC BY-SA 3.0)' },
+      soja:       { alt: 'Lavoura em fase inicial de desenvolvimento', credit: 'Unsplash · imagem ilustrativa' },
+      sala:       { alt: 'Professor em sala de aula com alunos', credit: 'Unsplash · imagem ilustrativa' },
+      consulta:   { alt: 'Profissional de saúde conversa com paciente', credit: 'Unsplash · imagem ilustrativa' },
+      celular:    { alt: 'Profissional de saúde usa o celular', credit: 'Unsplash · imagem ilustrativa' },
+      energia:    { alt: 'Linhas de transmissão de energia ao entardecer', credit: 'Unsplash · imagem ilustrativa' },
+      corrida:    { alt: 'Corredores treinam ao amanhecer', credit: 'Unsplash · imagem ilustrativa' }
+    };
+
+    /* ============================================================
+       Matérias
+       ============================================================ */
+    const articles = {
+      'mulher-norte': {
+        ed: 'cidade', kicker: 'Empreendedorismo', img: 'feira', date: '08/10/2026', time: '08h00',
+        title: 'Feira Mulher do Norte leva empreendedoras ao Porto Velho Shopping nesta sexta',
+        short: 'Feira Mulher do Norte reúne empreendedoras no Porto Velho Shopping',
+        deck: 'Edição acontece das 10h às 22h, no corredor interno do shopping, com produtos, serviços e economia criativa feitos por mulheres da capital.',
+        source: { name: 'Agência de Notícias de Porto Velho', url: 'https://www.portovelho.ro.gov.br/noticias/58504' },
+        paragraphs: [
+          'Mulheres que transformam talento, criatividade e conhecimento em fonte de renda têm nesta sexta-feira (9) um espaço para apresentar seus trabalhos em Porto Velho. A Feira Mulher do Norte será realizada das 10h às 22h, no corredor interno do Porto Velho Shopping.',
+          'Promovida pela Prefeitura, por meio da Coordenadoria de Políticas Públicas para Mulheres, a iniciativa busca incentivar o empreendedorismo feminino e a economia criativa.',
+          'Além de ampliar a visibilidade dos produtos, a feira aproxima as empreendedoras de novos consumidores e fortalece negócios conduzidos por mulheres da capital.'
+        ],
+        service: 'Feira Mulher do Norte · sexta-feira, 9 de outubro · das 10h às 22h · corredor interno do Porto Velho Shopping · entrada gratuita',
+        tags: ['Empreendedorismo', 'Mulheres', 'Porto Velho Shopping'], related: ['cafe-com-elas', 'dia-das-criancas', 'professores', 'conciliacao']
+      },
+      professores: {
+        ed: 'educacao', kicker: 'Rede municipal', img: 'sala', date: '08/10/2026', time: '12h35',
+        title: 'Prefeitura convoca novos professores para reforçar a rede municipal de ensino',
+        deck: 'Edital contempla profissionais para a área urbana, o Baixo Madeira, a BR-364 e os distritos; convocados têm 15 dias para cumprir as etapas.',
+        source: { name: 'Prefeitura de Porto Velho', url: 'https://www.portovelho.ro.gov.br/noticias/58516' },
+        paragraphs: [
+          'A rede municipal de ensino de Porto Velho está convocando novos profissionais para reforçar o atendimento aos estudantes na área urbana, nas comunidades e nos distritos.',
+          'A convocação foi publicada por meio do Edital nº 052/SEMAD/2026, ligado ao Processo Seletivo Simplificado nº 051/SEMAD/SEMED/2025. O prazo para os candidatos convocados cumprirem as etapas necessárias é de 15 dias, contados a partir da publicação do edital.',
+          'A chamada contempla professores de séries iniciais e de áreas específicas para Porto Velho, Baixo Madeira, Assentamento Santa Rita, Aliança, São Carlos, Joana D’Arc, Abunã, Extrema e Nova Califórnia.',
+          'A convocação exige a apresentação dos documentos previstos no edital, exame admissional e emissão do Atestado de Saúde Ocupacional. Quem não cumprir o prazo será considerado desistente, respeitada a ordem de classificação.'
+        ],
+        service: 'Onde ir: Semad, rua Duque de Caxias, nº 186, bairro Arigolândia, das 8h às 14h, com a documentação exigida no edital.',
+        tags: ['Educação', 'Concursos', 'Semed'], related: ['dados-sus', 'mulher-norte', 'cultura-toninho', 'cadastro-unico']
+      },
+      'cadastro-unico': {
+        ed: 'servico', kicker: 'Assistência social', img: 'prefeitura', date: '08/10/2026', time: '15h45',
+        title: 'Sistema do Cadastro Único terá interrupção temporária nesta sexta-feira (9)',
+        short: 'Cadastro Único fica fora do ar nesta sexta; atendimento volta na terça',
+        deck: 'Atendimento na Central, nos Cras e nos polos será retomado na terça-feira (13), após manutenção programada pelo governo federal.',
+        source: { name: 'Agência de Notícias de Porto Velho', url: 'https://agencia.portovelho.ro.gov.br/noticias/58521' },
+        paragraphs: [
+          'O sistema do Cadastro Único ficará temporariamente indisponível nesta sexta-feira (9 de outubro) em razão de uma manutenção programada no calendário oficial do Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome.',
+          'Durante a interrupção, os serviços e procedimentos que dependem diretamente do sistema não poderão ser realizados. A indisponibilidade alcança a Central do Cadastro Único, os Cras e os polos de atendimento.',
+          'Como o dia 12 de outubro é feriado nacional, os atendimentos serão retomados normalmente na terça-feira (13). A orientação é antecipar demandas sempre que possível e evitar deslocamentos durante o período de manutenção.'
+        ],
+        service: 'Retomada: terça-feira, 13 de outubro. Antes de sair de casa, confirme o funcionamento do ponto de atendimento e organize seus documentos.',
+        tags: ['Cadastro Único', 'Assistência social', 'Serviço'], related: ['conciliacao', 'dados-sus', 'mulher-norte', 'calor']
+      },
+      paroca: {
+        ed: 'politica', kicker: 'Câmara Municipal', img: 'aerea', date: '09/10/2026', time: '10h59',
+        title: 'Câmara de Porto Velho elege Zé Paroca presidente para o biênio 2027–2028',
+        short: 'Câmara elege Zé Paroca presidente para 2027–2028',
+        deck: 'Votação ocorreu após mudança no acordo que previa outra composição; nova Mesa Diretora terá Gedeão Negreiros como 1º vice-presidente.',
+        source: { name: 'Rondônia Agora', url: 'https://www.rondoniagora.com/politica/camara-da-capital-elege-vereador-paroca-novo-presidente' },
+        paragraphs: [
+          'O vereador José Uilson Guimarães de Souza, o Zé Paroca (Avante), foi eleito nesta sexta-feira (9) presidente da Câmara Municipal de Porto Velho para o biênio 2027–2028. A eleição ocorreu após uma mudança no acordo que previa outra composição para o segundo biênio.',
+          'A votação definiu também os demais integrantes da Mesa Diretora. O novo comando da Casa de Leis terá Gedeão Negreiros como 1º vice-presidente, Everaldo Fogaça como 2º vice, Edmilson Dourado como 3º vice e Pedro Geovar como 1º secretário.',
+          'Wanoel Martins foi escolhido 2º secretário e Nilton Souza ocupará a 3ª secretaria. A composição foi divulgada pela cobertura política regional.'
+        ],
+        subheading: 'Como fica a Mesa Diretora', bullets: ['Presidente: Zé Paroca (Avante)', '1º vice-presidente: Gedeão Negreiros', '2º vice-presidente: Everaldo Fogaça', '3º vice-presidente: Edmilson Dourado', 'Secretarias: Pedro Geovar, Wanoel Martins e Nilton Souza'],
+        tags: ['Câmara Municipal', 'Política', 'Eleição da Mesa'], related: ['dados-sus', 'colisoes-postes', 'conciliacao', 'cadastro-unico']
+      },
+      'dados-sus': {
+        ed: 'saude', kicker: 'Rede pública', img: 'celular', date: '09/10/2026', time: '09h15',
+        title: 'Dados desatualizados fazem pacientes perderem consultas e exames na rede pública',
+        short: 'Telefone errado no SUS faz paciente perder consulta; veja como atualizar',
+        deck: 'Semusa orienta moradores a manter telefone, endereço e cadastro do SUS em dia para não perder a vez na fila de especialidades.',
+        source: { name: 'Rondônia Agora', url: 'https://www.rondoniagora.com/geral/dados-atualizados-evitam-perda-de-consultas-e-exames-na-rede-publica-da-capital' },
+        paragraphs: [
+          'A Prefeitura de Porto Velho alerta que manter os dados cadastrais atualizados no Sistema Único de Saúde é importante para o agendamento de consultas especializadas, exames e procedimentos cirúrgicos na rede pública.',
+          'O fluxo de agendamento é gerenciado pelo Sisreg. Quando uma vaga é liberada, as equipes tentam falar com o paciente por ligação telefônica ou mensagem de WhatsApp para informar data, horário e local do atendimento.',
+          'Quando o contato não é possível por causa de telefone incorreto, endereço desatualizado ou número que não atende, a solicitação pode ser devolvida para que a vaga seja repassada ao próximo paciente da fila.',
+          'A atualização deve ser feita na Unidade Básica de Saúde mais próxima. Depois da alteração, os sistemas CadSUS e Sisreg são atualizados automaticamente.'
+        ],
+        subheading: 'O que levar à UBS', bullets: ['Documento oficial com foto e CPF', 'Cartão do SUS', 'Comprovante de residência atualizado'],
+        tags: ['SUS', 'Semusa', 'Saúde pública'], related: ['professores', 'cadastro-unico', 'calor', 'colisoes-postes']
+      },
+      'colisoes-postes': {
+        ed: 'servico', kicker: 'Trânsito e energia', img: 'energia', date: '09/10/2026', time: '08h59',
+        title: 'Rondônia registra 115 colisões contra postes em 2026; setembro teve o pior mês',
+        short: 'Rondônia registra 115 colisões contra postes em 2026',
+        deck: 'Acidentes deixaram mais de 120 mil clientes sem energia no acumulado do ano. Energisa orienta como agir em caso de fios caídos.',
+        source: { name: 'Rondônia Agora · Energisa Rondônia', url: 'https://www.rondoniagora.com/geral/rondonia-registra-115-colisoes-contra-postes-em-2026-energisa-alerta-para-riscos-e-consequencias' },
+        paragraphs: [
+          'De janeiro a setembro de 2026, Rondônia registrou 115 acidentes envolvendo veículos que colidiram contra postes de energia. Segundo o levantamento da Energisa Rondônia, as ocorrências provocaram interrupções que afetaram mais de 120 mil clientes no acumulado do ano.',
+          'Setembro teve 21 colisões, o maior número mensal do ano, com mais de 18 mil clientes atingidos. Além dos danos aos veículos e à rede, os acidentes colocam motoristas, passageiros, pedestres e moradores próximos em risco.',
+          'Em caso de colisão, a orientação é não se aproximar de fios caídos, postes danificados ou veículos que possam estar em contato com a rede elétrica. Quando for seguro, os ocupantes devem permanecer no carro até a chegada do socorro.',
+          'O Corpo de Bombeiros pode ser acionado pelo 193. Ocorrências envolvendo a rede elétrica devem ser comunicadas à Energisa Rondônia pelo 0800 647 0120.'
+        ],
+        subheading: 'Cuidados essenciais', bullets: ['Mantenha distância de postes danificados e fios caídos.', 'Não toque no veículo se houver cabos em contato com o automóvel.', 'Permaneça no carro se não houver outro risco imediato.', 'Acione o Corpo de Bombeiros (193) e a Energisa (0800 647 0120).'],
+        tags: ['Trânsito', 'Energisa', 'Segurança'], related: ['paroca', 'rio-madeira', 'dados-sus', 'calor']
+      },
+      conciliacao: {
+        ed: 'servico', kicker: 'Justiça', img: 'tjro', date: '06/10/2026', time: '17h20', updated: '07/10/2026 às 09h10',
+        title: 'Triagens para a Semana Nacional da Conciliação seguem até 30 de outubro',
+        short: 'Triagens da Semana de Conciliação seguem até 30 de outubro',
+        deck: 'Justiça Rápida Itinerante atende em faculdades da capital; etapa antecede a XXI Semana Nacional da Conciliação, de 3 a 6 de novembro.',
+        source: { name: 'Rondoniaovivo', url: 'https://rondoniaovivo.com/noticia/geral/2026/10/06/em-porto-velho-populacao-ja-pode-participar-das-triagens-para-semana-de-conciliacao.html' },
+        paragraphs: [
+          'As triagens da Justiça Rápida Itinerante já começaram em Porto Velho e seguem até 30 de outubro. A etapa identifica e organiza demandas pré-processuais com potencial de acordo antes da XXI Semana Nacional da Conciliação, marcada para 3 a 6 de novembro.',
+          'A ação é conduzida pelo Tribunal de Justiça de Rondônia, por meio da Corregedoria Geral da Justiça, em parceria com instituições de ensino. Para participar, a população deve procurar um dos pontos de atendimento com documentos pessoais e comprovantes relacionados ao pedido.',
+          'O cronograma passa por diferentes instituições ao longo do mês, com horários variados. A proposta é facilitar o acesso à solução consensual de conflitos sem que a pessoa precise começar diretamente por um processo judicial.'
+        ],
+        subheading: 'Cronograma das triagens', bullets: ['Unir: 5 a 8/10, das 8h às 12h.', 'Unisapiens: 5 a 9/10, das 14h às 18h.', 'São Lucas: 13 a 16/10, das 15h às 19h.', 'Escola Daniel Neri: 17 e 18/10, das 7h às 14h.', 'Faculdade Católica: 20 a 22/10, em horários definidos no cronograma.', 'Fimca e Metropolitana: 26 a 30/10, das 9h às 12h e das 15h às 18h.'],
+        tags: ['TJRO', 'Conciliação', 'Justiça'], related: ['cadastro-unico', 'mulher-norte', 'professores', 'paroca']
+      },
+      'cafe-com-elas': {
+        ed: 'saude', kicker: 'Outubro Rosa', img: 'consulta', date: '08/10/2026', time: '10h10',
+        title: 'Café com Elas promove roda de conversa sobre prevenção ao câncer de mama',
+        short: 'Outubro Rosa: Café com Elas debate prevenção ao câncer de mama',
+        deck: 'Encontro reúne servidoras municipais e empreendedoras da Feira Mulher do Norte, com orientação de profissionais de saúde.',
+        source: { name: 'Prefeitura de Porto Velho', url: 'https://www.portovelho.ro.gov.br/noticias/58497' },
+        paragraphs: [
+          'A programação do Outubro Rosa em Porto Velho terá nesta sexta-feira (9) uma roda de conversa sobre prevenção ao câncer de mama. O encontro reunirá servidoras da Prefeitura e mulheres empreendedoras que participam da Feira Mulher do Norte.',
+          'Profissionais da área da saúde participarão da conversa com orientações, troca de experiências e esclarecimento de dúvidas. A iniciativa busca reforçar que informação, acompanhamento e exames indicados devem fazer parte do cuidado ao longo de todo o ano.',
+          'A atividade é realizada pela Coordenadoria de Políticas Públicas para Mulheres e integra as ações municipais de conscientização sobre a saúde da mulher.'
+        ],
+        service: 'Café com Elas · sexta-feira, 9 de outubro · das 9h às 11h · auditório do Prédio do Relógio',
+        tags: ['Outubro Rosa', 'Saúde da mulher'], related: ['mulher-norte', 'dados-sus', 'cultura-toninho', 'calor']
+      },
+      'cultura-toninho': {
+        ed: 'cultura', kicker: 'Música', img: 'teatro', date: '06/10/2026', time: '14h30', updated: '07/10/2026 às 08h40',
+        title: 'Toninho Horta e Wagner Tiso sobem ao palco do Palácio das Artes em show gratuito',
+        short: 'Toninho Horta e Wagner Tiso fazem show gratuito em Porto Velho',
+        deck: 'Espetáculo “Das Geraes ao Mamoré” tem apresentações de 13 a 15 de outubro; ingressos são retirados no Sympla a partir desta sexta.',
+        source: { name: 'Rondoniaovivo', url: 'https://portal.rondoniaovivo.com/noticia/cultura/2026/10/06/cultura-toninho-horta-e-wagner-tiso-se-apresentam-em-show-especial-em-pvh.html' },
+        paragraphs: [
+          'O projeto Canto para Todos levará a Porto Velho o espetáculo “Das Geraes ao Mamoré”, com participação do Coral Canto Livre e dos músicos Toninho Horta e Wagner Tiso. A programação integra as ações do Mês do Servidor.',
+          'As apresentações estão previstas para os dias 13, 14 e 15 de outubro, no Teatro Palácio das Artes. Nos dois primeiros dias, o coral se apresenta às 19h30; no dia 15, o palco será dividido com Toninho Horta e Wagner Tiso, às 19h.',
+          'Os ingressos serão gratuitos e poderão ser retirados pela plataforma Sympla a partir desta sexta-feira (9). Para entrar no teatro, o público deverá levar 1 kg de alimento não perecível.'
+        ],
+        service: 'Das Geraes ao Mamoré · 13 e 14/10 às 19h30; 15/10 às 19h · Teatro Palácio das Artes · entrada gratuita com ingresso do Sympla e 1 kg de alimento',
+        tags: ['Música', 'Teatro Palácio das Artes', 'Agenda'], related: ['madeira-mamore', 'mulher-norte', 'cafe-com-elas', 'op-cultura']
+      },
+      'dia-das-criancas': {
+        ed: 'economia', kicker: 'Comércio', img: 'shopping', date: '09/10/2026', time: '07h40',
+        title: 'Comércio de Porto Velho aposta no Dia das Crianças para aquecer as vendas de outubro',
+        short: 'Comércio aposta no Dia das Crianças para aquecer vendas',
+        deck: 'Lojas do Centro e dos shoppings reforçam estoques para o fim de semana; com o feriado de segunda, vale confirmar horários antes de sair.',
+        paragraphs: [
+          'A semana que antecede o Dia das Crianças, comemorado na segunda-feira (12), é tradicionalmente uma das mais movimentadas do segundo semestre para o comércio de Porto Velho. Lojas de brinquedos, vestuário infantil e eletrônicos reforçaram estoques e prepararam vitrines temáticas.',
+          'Nos shoppings da capital, a expectativa é de corredores cheios no sábado (10) e no domingo (11), quando parte das famílias deixa as compras para a última hora. No Centro, lojistas apostam em promoções e parcelamento para competir com o comércio eletrônico.',
+          'Com o feriado nacional de Nossa Senhora Aparecida na segunda-feira, lojas e serviços podem ter horários diferenciados. A recomendação é confirmar o expediente antes de sair de casa.'
+        ],
+        subheading: 'Antes de comprar', bullets: ['Compare preços em mais de uma loja e no comércio on-line.', 'Brinquedos devem ter selo do Inmetro e indicação de faixa etária.', 'Guarde a nota fiscal: ela garante troca e assistência.', 'Nas compras pela internet, o direito de arrependimento é de sete dias.'],
+        tags: ['Comércio', 'Dia das Crianças', 'Consumidor'], related: ['safra-soja', 'mulher-norte', 'op-comercio', 'cadastro-unico']
+      },
+      'rio-madeira': {
+        ed: 'cidade', kicker: 'Rio Madeira', img: 'orla', date: '08/10/2026', time: '18h20',
+        title: 'Seca exige atenção redobrada de quem navega pelo Rio Madeira',
+        deck: 'Com o nível do rio mais baixo, bancos de areia e troncos submersos aumentam o risco para embarcações que ligam a capital aos distritos.',
+        paragraphs: [
+          'O período de estiagem na Amazônia altera a paisagem do Rio Madeira e muda a rotina de quem depende dele para trabalhar, se deslocar ou abastecer as comunidades ribeirinhas. Com o nível mais baixo, trechos antes navegáveis com tranquilidade passam a exigir cuidado extra.',
+          'Bancos de areia, pedrais e troncos submersos estão entre os principais riscos apontados por barqueiros que fazem a ligação entre Porto Velho e os distritos do Baixo Madeira. Em alguns pontos, as viagens ficam mais longas porque as embarcações precisam desviar das áreas rasas.',
+          'A orientação das autoridades marítimas é que nenhum passageiro embarque sem colete salva-vidas disponível, que a lotação da embarcação seja respeitada e que viagens noturnas sejam evitadas em trechos pouco conhecidos.'
+        ],
+        subheading: 'Segurança a bordo', bullets: ['Exija colete salva-vidas para todos os passageiros.', 'Respeite a capacidade máxima informada na embarcação.', 'Evite navegar à noite em trechos desconhecidos.', 'Emergências fluviais: Marinha do Brasil, telefone 185.'],
+        tags: ['Rio Madeira', 'Estiagem', 'Baixo Madeira'], related: ['madeira-mamore', 'calor', 'colisoes-postes', 'orla-corrida']
+      },
+      'madeira-mamore': {
+        ed: 'cultura', kicker: 'Patrimônio', img: 'efmm', date: '07/10/2026', time: '16h00',
+        title: 'Madeira-Mamoré: o que ver no complexo que guarda a origem de Porto Velho',
+        short: 'O que ver no complexo da Madeira-Mamoré',
+        deck: 'Às margens do Rio Madeira, o pátio da antiga ferrovia reúne galpões históricos, locomotivas e um dos pores do sol mais bonitos da capital.',
+        paragraphs: [
+          'Poucos lugares contam tanto sobre Porto Velho quanto o complexo da Estrada de Ferro Madeira-Mamoré. Construída no início do século 20 para escoar a borracha da região, a ferrovia deu origem ao povoado que viria a se tornar a capital de Rondônia.',
+          'A obra ficou conhecida como “Ferrovia do Diabo” pelo alto número de trabalhadores mortos durante a construção, vítimas de doenças tropicais e das condições extremas da floresta. Hoje, os galpões de estrutura metálica, as locomotivas a vapor e os trilhos preservados ajudam a contar essa história.',
+          'O pátio fica no Centro, a poucos minutos das Três Caixas d’Água, outro símbolo da cidade. No fim da tarde, a área às margens do rio vira ponto de encontro de famílias e turistas que vão ver o sol se pôr sobre o Madeira.'
+        ],
+        service: 'Roteiro: combine a visita ao complexo com as Três Caixas d’Água e o Mercado Cultural, todos na região central da cidade.',
+        tags: ['Madeira-Mamoré', 'Turismo', 'Patrimônio'], related: ['cultura-toninho', 'rio-madeira', 'orla-corrida', 'op-cultura']
+      },
+      'safra-soja': {
+        ed: 'economia', kicker: 'Agronegócio', img: 'soja', date: '08/10/2026', time: '07h30',
+        title: 'Produtores de Rondônia acompanham a volta das chuvas para acelerar o plantio da soja',
+        short: 'Volta das chuvas define ritmo do plantio da soja em Rondônia',
+        deck: 'Início da safra depende da umidade do solo; zoneamento agrícola indica, município a município, a janela mais segura para semear.',
+        paragraphs: [
+          'Com a chegada das primeiras chuvas da primavera, produtores de soja de Rondônia começam a colocar as máquinas no campo. O ritmo do plantio, no entanto, depende diretamente da regularidade das precipitações e da umidade do solo.',
+          'Agrônomos recomendam que a semeadura siga o Zoneamento Agrícola de Risco Climático (Zarc), que indica as janelas com menor risco de perdas por falta de chuva. Seguir o calendário também é condição para acessar o seguro rural e algumas linhas de crédito.',
+          'A soja está entre os principais produtos da pauta de exportação do estado, com destaque para a região do Cone Sul. O desempenho da safra tem reflexo direto no comércio, nos serviços e na arrecadação dos municípios do interior.'
+        ],
+        tags: ['Agronegócio', 'Soja', 'Cone Sul'], related: ['dia-das-criancas', 'op-comercio', 'rio-madeira', 'colisoes-postes']
+      },
+      calor: {
+        ed: 'saude', kicker: 'Clima', img: 'sol', date: '09/10/2026', time: '07h05',
+        title: 'Calor intenso: veja como se proteger nos dias mais quentes do ano na capital',
+        short: 'Calor intenso: como se proteger nos dias mais quentes do ano',
+        deck: 'Baixa umidade e temperaturas elevadas exigem cuidado redobrado com crianças, idosos e trabalhadores expostos ao sol.',
+        paragraphs: [
+          'Outubro costuma reunir alguns dos dias mais quentes do ano em Porto Velho, com sol forte, sensação térmica elevada e umidade do ar baixa nas horas mais quentes da tarde. A combinação aumenta o risco de desidratação e de mal-estar, principalmente em crianças e idosos.',
+          'Profissionais de saúde recomendam beber água ao longo do dia, mesmo sem sede, evitar exposição ao sol entre 10h e 16h e usar roupas leves e protetor solar. Quem trabalha ao ar livre deve fazer pausas em locais com sombra.',
+          'Tontura, dor de cabeça intensa, confusão mental e pele muito quente e seca podem indicar insolação. Nesses casos, a pessoa deve ser levada para um local fresco e o atendimento de urgência deve ser acionado pelo 192.'
+        ],
+        subheading: 'Cuidados no calor', bullets: ['Beba água ao longo do dia, mesmo sem sede.', 'Prefira atividades físicas no início da manhã ou à noite.', 'Nunca deixe crianças ou animais dentro de veículos fechados.', 'Mantenha os ambientes ventilados e use roupas leves.'],
+        tags: ['Clima', 'Saúde', 'Calor'], related: ['dados-sus', 'orla-corrida', 'rio-madeira', 'cafe-com-elas']
+      },
+      'orla-corrida': {
+        ed: 'esporte', kicker: 'Corrida de rua', img: 'corrida', date: '07/10/2026', time: '06h30',
+        title: 'Espaço Alternativo segue como ponto de encontro de corredores e ciclistas',
+        deck: 'Com o calor do meio do dia, os treinos se concentram no início da manhã e no fim da tarde; assessorias reforçam a orientação sobre hidratação.',
+        paragraphs: [
+          'Antes de o sol esquentar, o Espaço Alternativo já está movimentado. O trecho é um dos preferidos de quem corre, pedala ou caminha em Porto Velho e reúne desde atletas amadores em preparação para provas até moradores em busca de uma rotina mais ativa.',
+          'Grupos de corrida e assessorias esportivas organizam treinos coletivos nos primeiros horários da manhã e no início da noite, quando a temperatura dá uma trégua. A movimentação também atrai vendedores de água de coco e de lanches leves.',
+          'Para quem está começando, a recomendação é procurar avaliação médica, aumentar o volume de treino de forma gradual e reforçar a hidratação antes, durante e depois da atividade.'
+        ],
+        tags: ['Corrida de rua', 'Esporte amador', 'Qualidade de vida'], related: ['calor', 'madeira-mamore', 'rio-madeira', 'dados-sus']
+      },
+      'op-cadastro': {
+        ed: 'opiniao', kicker: 'Cidade em pauta', img: 'prefeitura', date: '09/10/2026', time: '06h00',
+        author: 'Marina Albuquerque', role: 'Jornalista, escreve sobre gestão pública e cidade', color: '#1d4fb5', initials: 'MA',
+        title: 'Cadastro atualizado também é política pública',
+        deck: 'Na saúde e na assistência social, o elo mais frágil do serviço público é a informação na ponta.',
+        paragraphs: [
+          'Duas notícias desta semana parecem tratar de assuntos diferentes, mas falam da mesma coisa. Na saúde, a Prefeitura alerta que pacientes perdem consultas e exames porque o telefone cadastrado no SUS não atende. Na assistência social, o Cadastro Único passa por manutenção e obriga quem depende dele a reorganizar a semana.',
+          'Nos dois casos, o elo frágil é a informação. Um sistema público pode ser moderno, integrado e bem-intencionado — e ainda assim falhar se o dado na ponta estiver errado. Uma vaga de especialista que volta para a fila por falta de contato é um desperdício que ninguém vê, mas todos pagam.',
+          'Cabe ao cidadão atualizar endereço e telefone, claro. Mas cabe ao poder público tornar isso fácil: atualização pelo celular, lembretes periódicos, atendimento nas unidades sem burocracia. Quanto menor o atrito, mais gente mantém o cadastro em dia.',
+          'Numa cidade com o tamanho de Porto Velho, com distritos a horas de barco, essa conta é ainda mais sensível. Informação correta é a primeira porta de entrada do serviço público.'
+        ],
+        tags: ['Opinião', 'Gestão pública'], related: ['dados-sus', 'cadastro-unico', 'op-comercio', 'op-cultura']
+      },
+      'op-comercio': {
+        ed: 'opiniao', kicker: 'Economia local', img: 'shopping', date: '08/10/2026', time: '06h00',
+        author: 'Paulo Henrique Sena', role: 'Economista, escreve sobre negócios em Rondônia', color: '#0f6b4f', initials: 'PS',
+        title: 'Outubro é o mês de vender — e de planejar o ano que vem',
+        deck: 'O Dia das Crianças abre a temporada mais importante do varejo. Quem chega a novembro sem plano corre atrás do prejuízo.',
+        paragraphs: [
+          'Para o pequeno lojista de Porto Velho, outubro é um mês de dois tempos. No primeiro, o Dia das Crianças movimenta o caixa e testa a capacidade de atender bem em dias de movimento. No segundo, começa a corrida silenciosa pelo fim de ano.',
+          'Black Friday, 13º salário e Natal concentram uma fatia decisiva do faturamento anual. Negociar com fornecedores agora, organizar estoque e definir uma política de preços clara costuma valer mais do que qualquer promoção improvisada em dezembro.',
+          'Há também a disputa com o comércio eletrônico. O varejo local tem algo que as grandes plataformas não têm: entrega no mesmo dia, troca sem burocracia e o atendimento de quem conhece o cliente pelo nome. Vale transformar isso em argumento de venda.',
+          'O consumidor está mais cauteloso, mas não parou de comprar. Ganha quem combina preço justo, presença digital mínima e o bom e velho balcão bem atendido.'
+        ],
+        tags: ['Opinião', 'Comércio'], related: ['dia-das-criancas', 'safra-soja', 'op-cadastro', 'op-cultura']
+      },
+      'op-cultura': {
+        ed: 'opiniao', kicker: 'Bastidores da cultura', img: 'teatro', date: '07/10/2026', time: '06h00',
+        author: 'Lúcia Ferraz', role: 'Produtora cultural e crítica de música', color: '#8a3b5c', initials: 'LF',
+        title: 'Teatro cheio é sinal de cidade viva',
+        deck: 'Shows gratuitos de qualidade formam público — e público formado sustenta a cena cultural o ano inteiro.',
+        paragraphs: [
+          'Quando Toninho Horta e Wagner Tiso dividirem o palco do Palácio das Artes com um coral local, Porto Velho vai assistir a mais do que um show. Vai ver, na prática, como se forma uma plateia.',
+          'Ingresso gratuito não é favor: é investimento. Quem entra no teatro pela primeira vez para ver um nome consagrado tende a voltar para ver o grupo da cidade, a peça da escola, a orquestra jovem. É assim que a cena local ganha fôlego.',
+          'A contrapartida de 1 kg de alimento também diz algo sobre a cidade que queremos: cultura e solidariedade no mesmo gesto, sem cerimônia.',
+          'O desafio é a continuidade. Uma programação regular, divulgada com antecedência e com espaço para artistas de Rondônia, vale mais do que grandes eventos isolados.'
+        ],
+        tags: ['Opinião', 'Cultura'], related: ['cultura-toninho', 'madeira-mamore', 'op-cadastro', 'op-comercio']
+      }
+    };
+    Object.entries(articles).forEach(([slug, a]) => { a.slug = slug; });
+
+    /* ============================================================
+       Utilidades
+       ============================================================ */
+    const $ = (s, el = document) => el.querySelector(s);
+    const $$ = (s, el = document) => [...el.querySelectorAll(s)];
+    const stamp = (a) => { const [d, m, y] = a.date.split('/'); return +(y + m + d + a.time.replace('h', '')); };
+    const all = Object.values(articles);
+    const news = all.filter((a) => a.ed !== 'opiniao').sort((x, y) => stamp(y) - stamp(x));
+    const opinions = all.filter((a) => a.ed === 'opiniao').sort((x, y) => stamp(y) - stamp(x));
+    const MOST_READ = ['paroca', 'cadastro-unico', 'colisoes-postes', 'dados-sus', 'cultura-toninho'];
+    const href = (a) => '#materia/' + a.slug;
+    const src = (key) => 'img/' + key + '.jpg';
+    const shortDate = (a) => a.date.slice(0, 5);
+    const when = (a) => (a.date === '09/10/2026' ? 'Hoje' : shortDate(a)) + ', ' + a.time;
+    const kicker = (a) => '<span class="kicker' + (a.ed === 'opiniao' ? ' opinion' : '') + '">' + a.kicker + '</span>';
+    const metaLine = (a) => '<div class="meta"><time>' + when(a) + '</time>' + (a.source ? '<span class="dot"></span><span>' + (a.source.name.split(' · ')[0]) + '</span>' : '') + '</div>';
+    const photo = (key, eager) => '<div class="ph"><img src="' + src(key) + '" alt="' + IMG[key].alt + '"' + (eager ? ' fetchpriority="high"' : ' loading="lazy"') + ' decoding="async" /></div>';
+
+    function card(a, opts = {}) {
+      return '<a class="story" href="' + href(a) + '">' + (opts.img === false ? '' : photo(a.img, opts.eager)) +
+        '<div>' + kicker(a) + '<h3 class="hl">' + (opts.short && a.short ? a.short : a.title) + '</h3>' +
+        (opts.deck ? '<p class="deck">' + a.deck + '</p>' : '') + (opts.meta === false ? '' : metaLine(a)) + '</div></a>';
+    }
+    function rankList(el) {
+      el.innerHTML = MOST_READ.map((s) => { const a = articles[s]; return '<li><a href="' + href(a) + '"><div><span class="kicker">' + ED[a.ed].name + '</span><h3 class="hl">' + (a.short || a.title) + '</h3></div></a></li>'; }).join('');
+    }
+    function feedItem(a) {
+      return '<a class="feed-item story" href="' + href(a) + '"><div class="feed-time">' + a.time + '<small>' + (a.date === '09/10/2026' ? 'Hoje' : shortDate(a)) + '</small></div>' +
+        '<div>' + kicker(a) + '<h3 class="hl">' + a.title + '</h3><p class="deck">' + a.deck + '</p>' + (a.source ? '<div class="meta"><span>Com informações de ' + a.source.name.split(' · ')[0] + '</span></div>' : '<div class="meta"><span>Da Redação</span></div>') + '</div>' + photo(a.img) + '</a>';
+    }
+
+    /* ============================================================
+       Navegação (desktop, compacta, menu, rodapé)
+       ============================================================ */
+    $$('[data-nav]').forEach((el) => {
+      el.innerHTML = (el.hasAttribute('data-compact') ? '' : '<a class="nav-link" href="#inicio" data-nav-key="inicio">Início</a>') +
+        NAV.map((k) => '<a class="nav-link" href="#editoria/' + k + '" data-nav-key="' + k + '">' + ED[k].name + '</a>').join('');
+      if (el.hasAttribute('data-compact')) $$('a', el).forEach((a) => a.setAttribute('tabindex', '-1'));
+    });
+    $('#drawerEd').innerHTML = '<a href="#inicio">Início<svg><use href="#i-right"/></svg></a>' + NAV.map((k) => '<a href="#editoria/' + k + '">' + ED[k].name + '<svg><use href="#i-right"/></svg></a>').join('');
+    $('#footEd').innerHTML = NAV.map((k) => '<li><a href="#editoria/' + k + '">' + ED[k].name + '</a></li>').join('');
+    function setActiveNav(key) { $$('[data-nav-key]').forEach((a) => a.classList.toggle('active', a.dataset.navKey === key)); }
+
+    /* ============================================================
+       Home
+       ============================================================ */
+    function renderHome() {
+      const lead = articles['mulher-norte'];
+      $('#frontLead').innerHTML = '<a class="story" href="' + href(lead) + '">' + photo(lead.img, true) + kicker(lead) + '<h2 class="hl">' + lead.title + '</h2><p class="deck">' + lead.deck + '</p>' + metaLine(lead) + '</a>' +
+        '<ul class="lead-related">' + ['cafe-com-elas', 'dia-das-criancas'].map((s) => { const a = articles[s]; return '<li><a href="' + href(a) + '"><span>' + (a.short || a.title) + '<small>' + ED[a.ed].name + ' · ' + when(a) + '</small></span></a></li>'; }).join('') + '</ul>';
+      $('#frontLeft').innerHTML = card(articles.paroca, { deck: true, eager: true }) + card(articles['cadastro-unico'], { img: false, deck: true }) + card(articles['dados-sus'], { img: false, short: true });
+      rankList($('#mostRead'));
+      $$('[data-rank]').forEach(rankList);
+      $('#cityGrid').innerHTML = ['rio-madeira', 'colisoes-postes', 'calor', 'madeira-mamore'].map((s) => card(articles[s], { deck: true, short: true })).join('');
+      $('#opinionGrid').innerHTML = opinions.map((a) => '<a href="' + href(a) + '"><span class="avatar" style="background:' + a.color + '">' + a.initials + '</span><div><div class="op-author">' + a.author + '<small>' + a.kicker + '</small></div><h3 class="hl">' + a.title + '</h3></div></a>').join('');
+      $('#cols').innerHTML = [['politica', ['paroca', 'conciliacao', 'cadastro-unico']], ['economia', ['safra-soja', 'dia-das-criancas', 'op-comercio']], ['cultura', ['cultura-toninho', 'madeira-mamore', 'op-cultura']]].map(([k, list]) => {
+        const [first, ...rest] = list.map((s) => articles[s]);
+        return '<div class="col-block"><div class="sec-head"><h2 class="sec-title"><a href="#editoria/' + k + '">' + ED[k].name + '</a></h2><a class="sec-more" href="#editoria/' + k + '">Mais <svg width="14" height="14"><use href="#i-arrow"/></svg></a></div>' +
+          card(first, { short: true }) + rest.map((a) => '<a class="mini" href="' + href(a) + '">' + kicker(a) + '<h3 class="hl">' + (a.short || a.title) + '</h3></a>').join('') + '</div>';
+      }).join('');
+    }
+
+    /* ---- Últimas notícias com filtro ---- */
+    let feedFilter = 'todos', feedLimit = 7;
+    const chipKeys = ['todos', 'cidade', 'politica', 'economia', 'saude', 'educacao', 'servico', 'cultura', 'esporte'];
+    $('#chips').innerHTML = chipKeys.map((k) => '<button class="chip' + (k === 'todos' ? ' on' : '') + '" type="button" role="tab" data-chip="' + k + '">' + (k === 'todos' ? 'Todas' : ED[k].name) + '</button>').join('');
+    function renderFeed() {
+      const list = news.filter((a) => feedFilter === 'todos' || a.ed === feedFilter);
+      $('#feed').innerHTML = list.length ? list.slice(0, feedLimit).map(feedItem).join('') : '<div class="feed-empty">Nenhuma notícia nesta editoria hoje.</div>';
+      $('#moreBtn').hidden = list.length <= feedLimit;
+    }
+    $('#chips').addEventListener('click', (e) => {
+      const b = e.target.closest('[data-chip]'); if (!b) return;
+      feedFilter = b.dataset.chip; feedLimit = 7;
+      $$('.chip').forEach((c) => { c.classList.toggle('on', c === b); c.setAttribute('aria-selected', c === b); });
+      renderFeed();
+    });
+    $('#moreBtn').addEventListener('click', () => { feedLimit += 6; renderFeed(); });
+
+    /* ---- Agora (ticker) ---- */
+    const tickerItems = news.slice(0, 6);
+    $('#ticker').innerHTML = tickerItems.map((a, i) => '<a class="ticker-item' + (i ? '' : ' on') + '" href="' + href(a) + '"><time>' + a.time + '</time><span>' + a.title + '</span></a>').join('');
+    let tick = 0;
+    function showTick(n) { const els = $$('.ticker-item'); tick = (n + els.length) % els.length; els.forEach((el, i) => el.classList.toggle('on', i === tick)); }
+    let tickTimer = setInterval(() => showTick(tick + 1), 5500);
+    const resetTick = () => { clearInterval(tickTimer); tickTimer = setInterval(() => showTick(tick + 1), 5500); };
+    $('#tickNext').addEventListener('click', () => { showTick(tick + 1); resetTick(); });
+    $('#tickPrev').addEventListener('click', () => { showTick(tick - 1); resetTick(); });
+
+    /* ---- Galeria ---- */
+    const GALLERY = [
+      { img: 'caixas', title: 'As Três Caixas d’Água, símbolo da capital', sub: 'Praça das Caixas d’Água, Centro' },
+      { img: 'efmm', title: 'Pátio da Madeira-Mamoré', sub: 'Complexo histórico da ferrovia' },
+      { img: 'catedral', title: 'Catedral iluminada', sub: 'Catedral Metropolitana, Centro' },
+      { img: 'crepusculo', title: 'Fim de tarde no Madeira', sub: 'Orla de Porto Velho' },
+      { img: 'mercado', title: 'Mercado Cultural', sub: 'Centro histórico' },
+      { img: 'ponte', title: 'A ponte sobre o Rio Madeira', sub: 'Travessia sobre o Madeira, em Porto Velho' }
+    ];
+    $('#gallery').innerHTML = GALLERY.map((g, i) => '<button type="button" data-lb="' + i + '">' + (i === 0 ? '<span class="gallery-count"><svg><use href="#i-camera"/></svg>' + GALLERY.length + ' fotos</span>' : '') + '<img src="' + src(g.img) + '" alt="' + IMG[g.img].alt + '" loading="lazy" decoding="async" /><span class="cap">' + g.title + '<small>' + g.sub + '</small></span></button>').join('');
+    let lbIndex = 0;
+    const lightbox = $('#lightbox');
+    function showLb(i) { lbIndex = (i + GALLERY.length) % GALLERY.length; const g = GALLERY[lbIndex]; $('#lbImg').src = src(g.img); $('#lbImg').alt = IMG[g.img].alt; $('#lbCap').innerHTML = g.title + '<small>' + (lbIndex + 1) + ' de ' + GALLERY.length + ' · ' + g.sub + ' · Foto: ' + IMG[g.img].credit + '</small>'; }
+    $('#gallery').addEventListener('click', (e) => { const b = e.target.closest('[data-lb]'); if (!b) return; showLb(+b.dataset.lb); openLayer(lightbox); });
+    $('#lbPrev').addEventListener('click', () => showLb(lbIndex - 1));
+    $('#lbNext').addEventListener('click', () => showLb(lbIndex + 1));
+    $('#lbClose').addEventListener('click', () => closeLayer(lightbox));
+    lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLayer(lightbox); });
+
+    /* ============================================================
+       Editoria
+       ============================================================ */
+    function renderSection(key) {
+      const ed = ED[key];
+      const list = (key === 'opiniao' ? opinions : news.filter((a) => a.ed === key));
+      const pool = list.length ? list : news;
+      $('#spCrumb').textContent = ed.name;
+      $('#spTitle').textContent = ed.name;
+      $('#spDesc').textContent = ed.desc;
+      const [first, ...rest] = pool;
+      const side = rest.slice(0, 2);
+      $('#spTop').innerHTML = '<a class="story" href="' + href(first) + '">' + photo(first.img, true) + kicker(first) + '<h2 class="hl lead-hl">' + first.title + '</h2><p class="deck">' + first.deck + '</p>' + metaLine(first) + '</a>' +
+        '<div class="side">' + (side.length ? side.map((a) => card(a, { short: true })).join('') : '') + '</div>';
+      const remaining = rest.slice(2);
+      const extra = news.filter((a) => !pool.includes(a)).slice(0, Math.max(0, 5 - remaining.length));
+      $('#spFeed').innerHTML = (remaining.length ? remaining.map(feedItem).join('') : '') +
+        (extra.length ? '<div class="sec-head" style="margin-top:34px"><h2 class="sec-title">Outras notícias</h2></div>' + extra.map(feedItem).join('') : '');
+    }
+
+    /* ============================================================
+       Matéria
+       ============================================================ */
+    let fontSize = 19;
+    function renderArticle(a) {
+      const isOp = a.ed === 'opiniao';
+      const crumb = $('#artCrumb');
+      crumb.textContent = ED[a.ed].name; crumb.href = '#editoria/' + a.ed;
+      $('#artHead').classList.toggle('is-opinion', isOp);
+      $('#artTitle').textContent = a.title;
+      $('#artDeck').textContent = a.deck;
+      const words = a.paragraphs.join(' ').split(/\s+/).length;
+      const mins = Math.max(2, Math.round(words / 200));
+      const published = 'Publicado em ' + a.date + ' às ' + a.time + (a.updated ? ' · Atualizado em ' + a.updated : '') + ' · ' + mins + ' min de leitura';
+      $('#artBy').innerHTML = isOp
+        ? '<span class="avatar" style="background:' + a.color + '">' + a.initials + '</span><div><strong>' + a.author + '</strong> · ' + a.role + '<br />' + published + '</div>'
+        : '<span class="by-mark">RD</span><div><strong>Da Redação</strong>' + (a.source ? ', com informações de ' + a.source.name : '') + '<br />' + published + '</div>';
+      const img = $('#artImg');
+      img.src = src(a.img); img.alt = IMG[a.img].alt;
+      $('#artCaption').innerHTML = IMG[a.img].alt + ' <span>— Foto: ' + IMG[a.img].credit + '</span>';
+      $('#artFigure').hidden = isOp;
+      let body = a.paragraphs.map((p) => '<p>' + p + '</p>').join('');
+      if (a.subheading) body += '<h2>' + a.subheading + '</h2>';
+      if (a.bullets) body += '<ul>' + a.bullets.map((b) => '<li>' + b + '</li>').join('') + '</ul>';
+      if (a.service) body += '<div class="art-service"><strong>Serviço</strong><p>' + a.service + '</p></div>';
+      $('#artBody').innerHTML = body;
+      $('#artBody').style.setProperty('--fs', fontSize + 'px');
+      $('#artSource').innerHTML = isOp
+        ? '<svg><use href="#i-doc"/></svg><span>Os artigos de opinião refletem a visão de seus autores e não necessariamente a do RD NEWS.</span>'
+        : a.source
+          ? '<svg><use href="#i-doc"/></svg><span>Texto do RD NEWS a partir de informações públicas. Fonte: <a href="' + a.source.url + '" target="_blank" rel="noopener">' + a.source.name + '</a>.</span>'
+          : '<svg><use href="#i-doc"/></svg><span>Reportagem da Redação do RD NEWS, Porto Velho.</span>';
+      $('#artTags').innerHTML = a.tags.map((t) => '<a href="#editoria/' + a.ed + '">' + t + '</a>').join('');
+      $('#artRelated').innerHTML = a.related.map((s) => card(articles[s], { short: true })).join('');
+      const url = location.href.split('#')[0] + href(a);
+      const text = a.title + ' — RD NEWS';
+      $('#shWa').href = 'https://wa.me/?text=' + encodeURIComponent(text + ' ' + url);
+      $('#shFb').href = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(url);
+      $('#shX').href = 'https://x.com/intent/post?text=' + encodeURIComponent(text) + '&url=' + encodeURIComponent(url);
+      document.title = a.title + ' | RD NEWS';
+    }
+    $('#fontUp').addEventListener('click', () => { fontSize = Math.min(23, fontSize + 1); $('#artBody').style.setProperty('--fs', fontSize + 'px'); });
+    $('#fontDown').addEventListener('click', () => { fontSize = Math.max(16, fontSize - 1); $('#artBody').style.setProperty('--fs', fontSize + 'px'); });
+    $('#shCopy').addEventListener('click', () => {
+      const done = () => toast('Link copiado.');
+      if (navigator.clipboard) navigator.clipboard.writeText(location.href).then(done, done); else done();
+    });
+    $('#reportErr').addEventListener('click', () => toast('Obrigado. Sua mensagem será encaminhada à equipe de correções.'));
+
+    /* ============================================================
+       Rotas
+       ============================================================ */
+    const views = { home: $('#homeView'), section: $('#sectionView'), article: $('#articleView') };
+    const HOME_TITLE = document.title;
+    function show(view) { Object.entries(views).forEach(([k, el]) => { el.hidden = k !== view; }); }
+    function route() {
+      const h = decodeURIComponent(location.hash.slice(1));
+      closeAll();
+      let m;
+      if ((m = h.match(/^materia\/(.+)$/)) && articles[m[1]]) {
+        show('article'); renderArticle(articles[m[1]]); setActiveNav(articles[m[1]].ed); window.scrollTo(0, 0); return;
+      }
+      if ((m = h.match(/^editoria\/(.+)$/)) && ED[m[1]]) {
+        show('section'); renderSection(m[1]); setActiveNav(m[1]); document.title = ED[m[1]].name + ' | RD NEWS'; window.scrollTo(0, 0); return;
+      }
+      show('home'); setActiveNav('inicio'); document.title = HOME_TITLE;
+      const target = h && h !== 'inicio' && document.getElementById(h);
+      if (target) requestAnimationFrame(() => window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - 70, behavior: 'smooth' }));
+      else window.scrollTo(0, 0);
+    }
+    window.addEventListener('hashchange', route);
+
+    /* ============================================================
+       Camadas: busca, menu
+       ============================================================ */
+    const scrim = $('#scrim'), drawer = $('#drawer'), searchPanel = $('#searchPanel');
+    function openLayer(el) { el.classList.add('open'); document.body.style.overflow = 'hidden'; }
+    function closeLayer(el) { el.classList.remove('open'); if (!$$('.open', document).some((x) => x.matches('.backdrop, .drawer, .search-panel'))) document.body.style.overflow = ''; }
+    function closeAll() { [drawer, searchPanel, lightbox].forEach(closeLayer); scrim.classList.remove('open'); }
+    $$('[data-open-drawer]').forEach((b) => b.addEventListener('click', () => { openLayer(drawer); scrim.classList.add('open'); }));
+    $$('[data-close-drawer]').forEach((b) => b.addEventListener('click', () => { closeLayer(drawer); scrim.classList.remove('open'); }));
+    scrim.addEventListener('click', closeAll);
+    $$('[data-open-search]').forEach((b) => b.addEventListener('click', () => { openLayer(searchPanel); scrim.classList.add('open'); setTimeout(() => $('#searchInput').focus(), 120); runSearch(); }));
+    $$('[data-close-search]').forEach((b) => b.addEventListener('click', () => { closeLayer(searchPanel); scrim.classList.remove('open'); }));
+
+    const norm = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+    function runSearch() {
+      const q = norm($('#searchInput').value.trim());
+      const res = $('#searchResults');
+      if (q.length < 2) { res.innerHTML = news.slice(0, 4).map(searchItem).join(''); return; }
+      const hits = all.filter((a) => norm([a.title, a.deck, a.kicker, ED[a.ed].name, (a.tags || []).join(' '), a.paragraphs.join(' ')].join(' ')).split(/[^a-z0-9]+/).some((w) => w.startsWith(q)) || norm(a.title).includes(q));
+      res.innerHTML = hits.length ? hits.map(searchItem).join('') : '<p style="color:var(--muted);grid-column:1/-1">Nenhum resultado para “' + $('#searchInput').value + '”.</p>';
+    }
+    function searchItem(a) { return '<a href="' + href(a) + '">' + photo(a.img) + '<div>' + kicker(a) + '<h3 class="hl">' + a.title + '</h3><div class="meta"><time>' + when(a) + '</time></div></div></a>'; }
+    $('#searchInput').addEventListener('input', runSearch);
+    $('#searchInput').addEventListener('keydown', (e) => { if (e.key === 'Enter') { const first = $('#searchResults a'); if (first) location.hash = first.getAttribute('href'); } });
+    $('#searchHint').addEventListener('click', (e) => { if (e.target.tagName === 'BUTTON') { $('#searchInput').value = e.target.textContent; runSearch(); } });
+
+    /* ============================================================
+       Cabeçalho compacto + barra de leitura
+       ============================================================ */
+    const sticky = $('#stickyBar'), progress = $('#progress'), masthead = $('#masthead');
+    function onScroll() {
+      const past = masthead.getBoundingClientRect().bottom < -60;
+      sticky.classList.toggle('show', past);
+      sticky.setAttribute('aria-hidden', !past);
+      $$('a, button', sticky).forEach((el) => el.setAttribute('tabindex', past ? '0' : '-1'));
+      if (!views.article.hidden) {
+        const body = $('#artBody'), r = body.getBoundingClientRect();
+        const pct = Math.min(1, Math.max(0, (window.innerHeight * .6 - r.top) / r.height));
+        progress.style.width = (pct * 100) + '%';
+      } else progress.style.width = '0';
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    /* ============================================================
+       Newsletter, WhatsApp, toast
+       ============================================================ */
+    let toastTimer;
+    function toast(msg) { const t = $('#toast'); t.textContent = msg; t.classList.add('show'); clearTimeout(toastTimer); toastTimer = setTimeout(() => t.classList.remove('show'), 3200); }
+    $('#newsletterForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const input = $('#newsletterEmail'), status = $('#newsletterStatus');
+      if (!input.value || !input.checkValidity()) { status.className = 'form-note'; status.textContent = 'Digite um e-mail válido.'; input.focus(); return; }
+      status.className = 'form-note ok'; status.textContent = 'Pronto! O primeiro boletim chega amanhã, às 6h.'; input.value = '';
+    });
+    $('#waBtn').addEventListener('click', () => toast('O canal do RD NEWS no WhatsApp será aberto aqui.'));
+
+    /* ============================================================
+       Aviso de direitos (exibido a cada 15 segundos — decisão do projeto)
+       ============================================================ */
+    const rightsModal = $('#rightsModal');
+    function openRightsNotice() { rightsModal.classList.add('open'); document.body.style.overflow = 'hidden'; }
+    function closeRightsNotice() { closeLayer(rightsModal); }
+    $('#rightsOpen').addEventListener('click', openRightsNotice);
+    $$('[data-rights]').forEach((a) => a.addEventListener('click', (e) => { e.preventDefault(); openRightsNotice(); }));
+    $('#rightsClose').addEventListener('click', closeRightsNotice);
+    $('#rightsConfirm').addEventListener('click', closeRightsNotice);
+    rightsModal.addEventListener('click', (e) => { if (e.target === rightsModal) closeRightsNotice(); });
+    setInterval(() => { if (!rightsModal.classList.contains('open')) openRightsNotice(); }, 15000);
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key !== 'Escape') return;
+      if (rightsModal.classList.contains('open')) closeRightsNotice();
+      else closeAll();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (!lightbox.classList.contains('open')) return;
+      if (e.key === 'ArrowRight') showLb(lbIndex + 1);
+      if (e.key === 'ArrowLeft') showLb(lbIndex - 1);
+    });
+
+    renderHome();
+    renderFeed();
+    runSearch();
+    route();
+  </script>
+</body>
+</html>
