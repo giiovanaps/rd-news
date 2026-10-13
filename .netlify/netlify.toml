@@ -1,0 +1,31 @@
+headersOrigin = "config"
+plugins = []
+redirects = []
+
+[functions]
+
+[functions."*"]
+
+[build]
+publish = "C:\\Users\\Admin\\Downloads\\RD_NEWS_copia_para_desenvolvedor\\dist"
+publishOrigin = "config"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
+
+[[headers]]
+for = "/img/*"
+
+[headers.values]
+Cache-Control = "public, max-age=604800"
